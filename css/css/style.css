@@ -12,10 +12,10 @@
 }
 
 body {
-    background: var(--background-gradient); /* 设置背景为渐变 */
-    background-size: cover; /* 确保背景覆盖整个页面 */
-    background-repeat: no-repeat; /* 防止背景重复 */
-    min-height: 100vh; /* 确保背景至少覆盖整个视口高度 */
+    background: var(--background-gradient);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -109,6 +109,7 @@ body {
     min-height: 100vh;
     padding: 40px;
     transition: margin-left 0.3s ease;
+    overflow: auto; /* 确保内容超出时可滚动 */
 }
 
 .main-content.full-width {
@@ -139,7 +140,7 @@ body {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    max-width: 100%; /* 确保卡片不会超出背景 */
+    max-width: 100%;
 }
 
 /* 通用版块样式 */
@@ -178,6 +179,16 @@ body {
 .horizontal-link a:hover {
     text-decoration: none;
     color: var(--primary-color);
+}
+
+/* 平台使用说明框样式 */
+.platform-instructions {
+    background: inherit;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* 确保内边距包含在宽度内 */
+    width: 100%; /* 宽度自适应 */
 }
 
 /* 响应式设计 */
@@ -271,6 +282,8 @@ main section[style*="display: block"] {
 .copyright-text {
     max-width: 1200px;
     margin: 0 auto;
+    white-space: nowrap; /* 防止文本换行 */
+    font-size: 1.5vw; /* 根据视口宽度动态设置字体大小，1.5vw可根据实际效果调整 */
 }
 
 /* 移动端适配 */
