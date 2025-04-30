@@ -133,3 +133,37 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('selectstart', function (e) {
     e.preventDefault();
 });
+
+// 侧边栏控制按钮点击事件
+const sidebarToggle = document.getElementById('sidebar-toggle');
+const sidebar = document.querySelector('.sidebar');
+const mainContent = document.querySelector('.main-content');
+
+sidebarToggle.addEventListener('click', () => {
+    sidebar.classList.toggle('hidden');
+    mainContent.classList.toggle('full-width');
+});
+
+// 页面加载时处理移动端适配
+window.addEventListener('load', handleMobileResize);
+// 窗口大小改变时处理移动端适配
+window.addEventListener('resize', handleMobileResize);
+
+
+
+function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    sidebar.classList.toggle('hidden');
+
+    // 调整侧边栏隐藏按钮的位置
+    if (sidebar.classList.contains('hidden')) {
+        sidebarToggle.style.left = '10px';
+    } else {
+        sidebarToggle.style.left = '260px';
+    }
+
+    // 调整主内容区的样式
+    const mainContent = document.querySelector('.main-content');
+    mainContent.classList.toggle('full-width');
+}
