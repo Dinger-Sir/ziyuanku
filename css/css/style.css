@@ -11,6 +11,16 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
+body {
+    background: var(--background-gradient); /* 设置背景为渐变 */
+    background-size: cover; /* 确保背景覆盖整个页面 */
+    background-repeat: no-repeat; /* 防止背景重复 */
+    min-height: 100vh; /* 确保背景至少覆盖整个视口高度 */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
 /* 侧边栏样式 */
 .sidebar {
     position: fixed;
@@ -21,23 +31,29 @@
     border-right: 1px solid #eee;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     z-index: 1000;
+    left: 0;
+    transition: left 0.3s ease;
+}
+
+.sidebar.hidden {
+    left: -250px;
 }
 
 .logo {
-    text-align: center; /* 添加容器居中 */
-    padding: 0 20px;    /* 添加左右内边距 */
+    text-align: center;
+    padding: 0 20px;
 }
 
 .logo img {
     width: 100px;
-    height: 100px; /* 新增，确保宽高一致 */
+    height: 100px;
     margin: 20px auto 40px;
     display: block;
-    border-radius: 50%; /* 圆形关键属性 */
-    object-fit: cover; /* 保持图片比例 */
-    border: 2px solid #fff; /* 可选白色边框 */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 可选阴影 */
-    transition: all 0.3s ease; /* 悬停动画 */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
 .logo img:hover {
@@ -45,7 +61,6 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* 添加Logo链接样式 */
 .logo-link {
     display: block;
     text-decoration: none;
@@ -93,14 +108,12 @@
     margin-left: 250px;
     min-height: 100vh;
     padding: 40px;
-    background: var(--background-gradient);
+    transition: margin-left 0.3s ease;
 }
 
-/* 首页样式
-#home {
-    max-width: 1200px;
-    margin: 0 auto;
-} */
+.main-content.full-width {
+    margin-left: 0;
+}
 
 .hero-section {
     text-align: center;
@@ -126,6 +139,7 @@
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    max-width: 100%; /* 确保卡片不会超出背景 */
 }
 
 /* 通用版块样式 */
@@ -153,11 +167,10 @@
     text-align: center;
 }
 
-/* 新增链接样式 */
 .horizontal-link a {
     text-decoration: none;
     color: inherit;
-    display: block; /* 确保点击区域填充整个容器 */
+    display: block;
     width: 100%;
     height: 100%;
 }
@@ -191,35 +204,41 @@
 
 @media (max-width: 768px) {
     .sidebar {
-        position: fixed;
-        width: 100%;
-        height: auto;
-        bottom: 0;
-        top: auto;
-        display: flex;
-        justify-content: space-around;
+        width: 150px;
         padding: 10px;
     }
 
-    @media (max-width: 768px) {
-        .logo img {
-            width: 80px;
-            height: 80px;
-            margin: 10px auto 20px;
-        }
+    .nav-link {
+        padding: 10px;
+        font-size: 14px;
     }
 
-    .logo {
-        display: none;
+    .nav-link i {
+        width: 20px;
+        margin-right: 8px;
+        font-size: 16px;
     }
 
     .main-content {
-        margin-left: 0;
-        padding: 25px 15px 80px;
+        margin-left: 150px;
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 20px;
     }
 
     .horizontal-links {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .horizontal-link {
+        padding: 15px;
+    }
+
+    .horizontal-link a {
+        font-size: 14px;
     }
 }
 
@@ -229,7 +248,7 @@ html {
 
 /* 移除首页强制显示样式 */
 #home {
-    display: none; /* 移除原有display: block */
+    display: none;
 }
 
 /* 添加通用版块显示规则 */
@@ -238,20 +257,13 @@ main section[style*="display: block"] {
 }
 
 /* 版权声明 */
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: relative; /* 新增 */
-}
-
 .site-footer {
-    width: calc(100% - 250px); /* 减去侧边栏宽度 */
+    width: calc(100% - 250px);
     margin-left: 100px;
     padding: 105px;
     text-align: center;
     color: var(--secondary-color);
-    position: static; /* 移除固定定位 */
+    position: static;
     z-index: 100;
     transition: all 0.3s ease;
 }
@@ -264,7 +276,7 @@ body {
 /* 移动端适配 */
 @media (max-width: 768px) {
     .main-content {
-        margin-left: 0;
+        margin-left: 150px;
         padding: 25px 15px;
     }
     
@@ -275,7 +287,7 @@ body {
     }
     
     body {
-        padding-bottom: 60px; /* 给移动端底部导航留空间 */
+        padding-bottom: 0;
     }
 }
 
@@ -289,17 +301,18 @@ body {
     font-size: 14px;
     opacity: 0;
     transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    pointer-events: none; /* 防止提示框影响鼠标事件 */
+    pointer-events: none;
 }
+
 .right-click-tip.show {
     opacity: 1;
 }
 
 body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* 标准语法 */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .custom-tooltip {
@@ -311,4 +324,21 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     font-size: 14px;
     display: none;
     z-index: 1000;
+}
+
+/* 侧边栏隐藏按钮 */
+.sidebar-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #f8f9fa;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: left 0.3s ease;
+}
+
+.sidebar.hidden + .sidebar-toggle {
+    left: 10px;
 }    
