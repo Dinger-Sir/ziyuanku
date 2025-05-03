@@ -15,12 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 验证有效版块（需与HTML中section的id匹配）
     const validSections = [
-        'home', 'a-section', 'b-section', 'c-section', 'd-section', 
+        'home', 'a-section', 'b-section', 'c-section', 'd-section',
         'c-section-sub1', 'c-section-sub2', 'c-section-sub3', 'c-section-sub4',
         'c-section-sub5', 'c-section-sub6', 'c-section-sub7', 'c-section-sub8',
         'c-section-sub9', 'c-section-sub10', 'c-section-sub11', 'c-section-sub12',
         'c-section-sub13', 'c-section-sub14', 'c-section-sub15', 'c-section-sub16',
-        'c-section-sub17', 'c-section-sub18'
+        'c-section-sub17', 'c-section-sub18', 'c-section-sub19', 'c-section-sub20',
+        'c-section-sub21', 'c-section-sub22', 'c-section-sub23', 'c-section-sub24',
+        'c-section-sub25', 'c-section-sub26', 'c-section-sub27', 'c-section-sub28',
+        'c-section-sub29', 'c-section-sub30', 'c-section-sub31', 'c-section-sub32',
+        'c-section-sub33', 'c-section-sub34', 'c-section-sub35', 'c-section-sub36',
+        'c-section-sub37', 'c-section-sub38', 'c-section-sub39', 'c-section-sub40',
+        'c-section-sub41', 'c-section-sub42', 'c-section-sub43', 'c-section-sub44'
     ];
 
     // 判断是否有效hash
