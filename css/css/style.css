@@ -413,3 +413,8 @@ body {
 .title-shift {
     margin-left: 40px !important;
 }    
+
+a {
+    text-decoration: none;
+    color: #2f00ff;
+}
