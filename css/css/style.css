@@ -335,7 +335,8 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     user-select: none;
 }
 
-.custom-tooltip {
+/* 鼠标静置，黑色提示框提示 */
+/* .custom-tooltip {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
@@ -344,7 +345,7 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     font-size: 14px;
     display: none;
     z-index: 1000;
-}
+} */
 
 /* 侧边栏隐藏按钮 */
 .sidebar-toggle {
