@@ -26,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'c-section-sub29', 'c-section-sub30', 'c-section-sub31', 'c-section-sub32',
         'c-section-sub33', 'c-section-sub34', 'c-section-sub35', 'c-section-sub36',
         'c-section-sub37', 'c-section-sub38', 'c-section-sub39', 'c-section-sub40',
-        'c-section-sub41', 'c-section-sub42', 'c-section-sub43', 'c-section-sub44'
+        'c-section-sub41', 'c-section-sub42', 'c-section-sub43', 'c-section-sub44',
+        'd-section-sub1','d-section-sub2','d-section-sub3','d-section-sub4','e-section'
     ];
 
     // 判断是否有效hash
