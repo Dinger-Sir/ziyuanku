@@ -1,3 +1,43 @@
+// ======== 新增：点击计数与排序功能 ========
+function initializeClickSort() {
+    // 定义快速入口容器的选择器（根据你的HTML结构调整）
+    const quickAccessContainers = document.querySelectorAll('#home .horizontal-links');
+
+    quickAccessContainers.forEach(container => {
+        // 1. 获取所有链接项
+        const links = Array.from(container.querySelectorAll('.horizontal-link'));
+        
+        // 2. 为每个链接添加点击计数器
+        links.forEach(link => {
+            const anchor = link.querySelector('a');
+            const key = anchor.innerText.trim(); // 使用文字作为存储键
+            
+            anchor.addEventListener('click', () => {
+                const count = localStorage.getItem(key) || 0;
+                localStorage.setItem(key, parseInt(count) + 1);
+            });
+        });
+
+        // 3. 排序逻辑
+        const sortedLinks = links.sort((a, b) => {
+            const keyA = a.querySelector('a').innerText.trim();
+            const keyB = b.querySelector('a').innerText.trim();
+            
+            const countA = parseInt(localStorage.getItem(keyA)) || 0;
+            const countB = parseInt(localStorage.getItem(keyB)) || 0;
+            
+            return countB - countA; // 降序排列
+        });
+
+        // 4. 清空容器并重新添加排序后的元素
+        container.innerHTML = '';
+        sortedLinks.forEach(link => {
+            container.appendChild(link);
+        });
+    });
+}
+
+
 // 移动端适配增强
 function handleMobileResize() {
     const sidebar = document.querySelector('.sidebar');
@@ -136,6 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+    initializeClickSort(); // 新增此行
 });
 
 document.addEventListener('selectstart', function (e) {
