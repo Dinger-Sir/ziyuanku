@@ -6,13 +6,6 @@
     <title>大学一点通工具箱</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/css/style.css">
-     <link rel="icon" href="./ico/大学一点通.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="./ico/大学一点通.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" href="./ico/16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="./ico/32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="./ico/48x48.png" sizes="48x48">
-    <link rel="icon" type="image/png" href="./ico/128x128.png" sizes="128x128">
-    <link rel="icon" type="image/png" href="./ico/256x256.png" sizes="256x256">
     <style>
         /* 新增样式，用于标题文字右移 */
        .title-shift {
@@ -50,23 +43,29 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a href="#0-section" class="nav-link">
+                    <i class="fas fa-th-large"></i>
+                    <span>浏览器</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a href="#a-section" class="nav-link">
                     <i class="fas fa-th-large"></i>
-                    <span>AI工具箱</span>
+                    <span>AI工具</span>
                 </a>
             </li>
             
             <li class="nav-item">
                 <a href="#b-section" class="nav-link">
                     <i class="fas fa-th-large"></i>
-                    <span>影视资源库</span>
+                    <span>影视资源</span>
                 </a>
             </li>
 
             <li class="nav-item">
                 <a href="#c-section" class="nav-link">
                     <i class="fas fa-th-large"></i>
-                    <span>软件下载</span>
+                    <span>电脑软件</span>
                 </a>
             </li>
 
@@ -98,6 +97,9 @@
                 <p>你想要的资源这里应有尽有</p>
                 <p>请持续关注“大学一点通”公众号</p>
             </div>
+
+<div class="quick-search-tips" style="margin-left: 270px; padding: 0 20px; color: #666; font-size: 14px;">
+</div>
             
             <div class="guide-cards">
                 <div class="guide-card">
@@ -123,13 +125,13 @@
                     <h3><i class="fas fa-link"></i>快速入口</h3>
                     <div class="horizontal-links">
                         <div class="horizontal-link">
-                            <a href="#b-section" >影视资源库</a>
+                            <a href="#b-section" >影视资源</a>
                         </div>
                         <div class="horizontal-link">
-                            <a href="#c-section">软件下载</a>
+                            <a href="#c-section">电脑软件</a>
                         </div>
                         <div class="horizontal-link">
-                            <a href="#a-section">AI工具箱</a>
+                            <a href="#a-section">AI工具</a>
                         </div>
                         <div class="horizontal-link">
                             <a href="#d-section">课本答案</a>
@@ -139,9 +141,32 @@
             </div>
         </section>
 
+<!-- 搜索版块P0 -->
+<section id="0-section" style="display: none;">
+    <div class="category-container">
+        <div class="main-category">
+                          <!-- 搜索框 -->
+<div class="search-box" style="display: flex; margin-left: 270px; padding: 30px; width: 60%; max-width: 800px;">
+    <div id="engine-selector" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px 0 0 5px; cursor: pointer; background-color: white; display: flex; align-items: center;">
+        <span class="engine-name">百度</span>
+        <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
+    </div>
+    <div id="engine-options" style="display: none; position: absolute; background: white; border: 1px solid #ccc; border-radius: 5px; z-index: 1; margin-top: 40px;">
+        <div class="engine-option" data-engine="baidu" style="padding: 10px; cursor: pointer;">百度</div>
+        <div class="engine-option" data-engine="bing" style="padding: 10px; cursor: pointer;">必应</div>
+        <div class="engine-option" data-engine="google" style="padding: 10px; cursor: pointer;">谷歌</div>
+        <div class="engine-option" data-engine="sogou" style="padding: 10px; cursor: pointer;">搜狗</div>
+    </div>
+    <input type="text" id="search-input" placeholder="输入搜索内容" style="padding: 10px; border: 1px solid #ccc; border-left: none; flex: 1; margin-right: 0;">
+    <button id="search-btn" style="padding: 10px 20px; background: #007BFF; color: white; border: none; border-radius: 0 5px 5px 0; cursor: pointer;">大学一点通搜索</button>
+</div>
+</div>
+</div>
+    </section>
+
  <!-- A版块 -->
  <section id="a-section" style="display: none;">
-    <h2 class="section-title">AI工具箱</h2>
+    <h2 class="section-title">AI工具</h2>
     <div class="category-container">
         <div class="main-category">
             <h3>AI聊天对话</h3>
@@ -348,7 +373,7 @@
 
         <!-- B版块 -->
         <section id="b-section" style="display: none;">
-            <h2 class="section-title">影视资源库</h2>
+            <h2 class="section-title">影视资源</h2>
             <div class="category-container">
                 <!-- 主要分类1 -->
                 <div class="category-group">
@@ -361,7 +386,7 @@
                             <a href="https://www.zzjt168.com/?utm_source=daxueyidiantong&utm_medium=wechat&utm_id=daxueyidiantong&hmsr=%E7%AD%96%E9%A9%B0%E5%BD%B1%E8%A7%86&hmpl=&hmcu=&hmkw=&hmci="  title="来源于第三方。电脑端可用，手机端会被拦截报错">免费影视1</a>
                         </div>
                         <div class="horizontal-link">
-                            <a href="https://www.danmutv.com/?utm_source=daxueyidiantong&utm_medium=wechat&utm_id=daxueyidiantong&hmsr=%E9%B2%A8%E9%B1%BCTV&hmpl=&hmcu=&hmkw=&hmci="   title="来源于第三方。界面有不良弹窗广告，勿信！">免费影视2</a>
+                            <a href="https://www.yzhmd.com/?utm_source=daxueyidiantong&utm_medium=wechat&utm_id=daxueyidiantong&hmsr=%E9%B2%A8%E9%B1%BCTV&hmpl=&hmcu=&hmkw=&hmci="   title="来源于第三方。界面有不良弹窗广告，勿信！">免费影视2</a>
                         </div>
                         <div class="horizontal-link">
                             <a href="https://www.guangyingmi.com/?utm_source=daxueyidiantong&utm_medium=wechat&utm_id=daxueyidiantong&hmsr=%E8%A7%82%E5%BD%B1%E8%BF%B7&hmpl=&hmcu=&hmkw=&hmci="    title="来源于第三方。界面有不良弹窗广告，勿信！">免费影视3</a>
@@ -370,7 +395,7 @@
                             <a href="https://www.5.movie/?utm_source=daxueyidiantong&utm_medium=wechat&utm_id=daxueyidiantong&hmsr=5%E7%82%B9%E7%94%B5%E5%BD%B1&hmpl=&hmcu=&hmkw=&hmci="    title="来源于第三方。界面有不良弹窗广告，勿信！">免费影视4</a>
                         </div>
                         <div class="horizontal-link">
-                            <a href="https://lkvod.me/?utm_source=daxueyidiantong&utm_medium=wechat&utm_id=daxueyidiantong&hmsr=%E6%9D%A5%E7%9C%8B%E7%82%B9%E6%92%AD&hmpl=&hmcu=&hmkw=&hmci="  title="来源于第三方。界面有不良弹窗广告，勿信！">免费影视5</a>
+                            <a href="https://www.lkvod.com/?utm_source=daxueyidiantong&utm_medium=wechat&utm_id=daxueyidiantong&hmsr=%E6%9D%A5%E7%9C%8B%E7%82%B9%E6%92%AD&hmpl=&hmcu=&hmkw=&hmci="  title="来源于第三方。界面有不良弹窗广告，勿信！">免费影视5</a>
                         </div>  
                     </div>
                 </div>
@@ -2506,7 +2531,7 @@
     <div class="category-container">
         <!-- 主要分类1 -->
         <div class="category-group">
-            <h3>实用推荐</h3>
+            <h3>自研工具（<span style="color: red;">推荐</span>）</h3>
             <div class="horizontal-links">
                 <div class="horizontal-link">
                     <a href="https://daxueydtsy.netlify.app/">加水印</a>
@@ -2522,64 +2547,10 @@
         </div>
 
         <div class="category-group">
-            <h3>高速实时路况</h3>
+            <h3>图片处理</h3>
             <div class="horizontal-links">
                 <div class="horizontal-link">
-                    <a href="https://weixin.hngscloud.com/">河南高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://etc.scjtonline.cn/ScWeChatAvatarNew/#/homePage">四川高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://epsn.jtw.sh.gov.cn/wxgzh/html/ssjt.html">上海高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://smap.ahetc.com.cn/AnhuiAdminServer/html/SVG/indexWeb.html?sessionid=-785186672">安徽高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://jtj.cq.gov.cn/cx/weixin/videoRoad/appRoad">重庆高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://lwyxjcxxfb.bchd.com.cn/weimei/wxpt">北京高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="http://www.hebecc.com/expressway/html/app/mapTX.html">河北高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="http://221.7.196.191:9002/gxgscx-public/#/home/homePage">广西高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://smap.ahetc.com.cn/AnhuiAdminServer/html/SVG/indexWeb.html">安徽高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="http://service.yigaosu.com/?utm_campaign=%E9%AB%98%E9%80%9F%E8%B7%AF%E5%86%B5%E6%9F%A5%E8%AF%A2&utm_medium=e%E9%AB%98%E9%80%9F%E6%9C%8D%E5%8A%A1%E5%8F%B7%E8%8F%9C%E5%8D%95%E6%A0%8F%E5%AE%9E%E6%97%B6%E8%B7%AF%E5%86%B5&utm_source=e%E9%AB%98%E9%80%9F%E6%9C%8D%E5%8A%A1%E5%8F%B7-%E8%8F%9C%E5%8D%95%E6%A0%8F&gio_link_id=xogzGNPm#/">山东高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://www.02712122.com/HubeiOfficialAccounts/serverHall/highway">湖北高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="http://hnglj.tianyait.net:8189/lkxx/index.jhtml">海南高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://cxfw.jtyst.xinjiang.gov.cn/wap/#/home/index">新疆高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://mtk.nmetc.com.cn:8443/roadmsg/fyH5/html/highWay.html">内蒙古高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://app.ln-gst.com/sessionSVGVue/index.html#/">辽宁高速</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://ddzlcx.jtyst.zj.gov.cn/wx/index.html?openId=oyeVQ1bkOCbOJtdu7UIhgDVHlAcc#/"  title="微信内打开">浙江高速（微信）</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://jtqg.gandongyun.cn/kg_pidwx/hsrc/Jumphsrc?phoneType=&pageType=hsrcresponse_type=code"  title="微信内打开">江苏高速（微信）</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://managespy.gstscc.cn/wxapp2023/#/home"  title="微信内打开">甘肃高速（微信）</a>
-                </div>
-                <div class="horizontal-link">
-                    <a href="https://gaoguantong.ruitong369.com/GaoGuanTongServer/gaoguantongHTML/html/direction/12122/MainTest.html"  title="微信内打开">陕西高速（微信）</a>
+                    <a href="https://weixin.hngscloud.com/">添加水印</a>
                 </div>
                 <!-- 重复添加4个链接 -->
             </div>
@@ -2596,6 +2567,84 @@
     </main>
 
     <script src="js/js/script.js"></script>
+
+
+
+
+
+
+
+    <!-- <script>
+        // 基础保护（必须）
+        document.addEventListener("DOMContentLoaded", function() {
+          // 禁用右键菜单
+          document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            alert('This content is protected!');
+            return false;
+          });
+        
+          // 禁用文本选择（可选）
+          document.onselectstart = function() { 
+            return false; 
+          };
+        
+          // 禁用复制功能（可选）
+          document.oncopy = function() { 
+            return false; 
+          };
+          
+          // 禁用剪切功能（可选）
+          document.oncut = function() { 
+            return false; 
+          };
+        
+          // 禁用快捷键（Ctrl+C）
+          document.addEventListener('keydown', function(e) {
+            // 禁用 Ctrl+C / Ctrl+X
+            if (e.ctrlKey && [67, 88].includes(e.keyCode)) {
+              e.preventDefault();
+              return false;
+            }
+            
+            // 禁用 F12 开发者工具
+            if (e.keyCode === 123) { // F12
+              e.preventDefault();
+              return false;
+            }
+            
+            // 禁用 Ctrl+U 查看源代码
+            if (e.ctrlKey && e.keyCode === 85) { 
+              e.preventDefault();
+              return false;
+            }
+            
+            // 禁用 Ctrl+Shift+I 开发者工具
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 73) { 
+              e.preventDefault();
+              return false;
+            }
+          });
+        
+          // 禁用拖拽（可选）
+          document.ondragstart = function() { 
+            return false; 
+          };
+        });
+        
+        // 高级保护（可选）
+        window.onload = function() {
+          // 禁用 iframe 嵌套
+          if (window != top) {
+            top.location.replace(window.location.href);
+          }
+          
+          // 禁用控制台调试
+        //   setInterval(function(){
+        //     debugger;
+        //   }, 1000);
+        }
+        </script> -->
 
         <div id="right-click-tip" class="right-click-tip">网站不支持复制！</div>
     </body>
