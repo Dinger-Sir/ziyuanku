@@ -181,7 +181,6 @@ body {
     color: var(--primary-color);
 }
 
-/* 平台使用说明框样式 */
 .platform-instructions {
     background: inherit;
     border-radius: 8px;
@@ -217,7 +216,7 @@ body {
     .sidebar {
         width: 150px;
         padding: 10px;
-        padding-top: 50px; /* 新增：将侧边栏内容整体下移，可按需调整该值 */
+        padding-top: 50px; 
     }
 
     .nav-link {
@@ -258,17 +257,14 @@ html {
     scroll-behavior: smooth;
 }
 
-/* 移除首页强制显示样式 */
 #home {
     display: none;
 }
 
-/* 添加通用版块显示规则 */
 main section[style*="display: block"] {
     display: block !important;
 }
 
-/* 版权声明 */
 .site-footer {
     padding: 20px 0;
     margin: 30px auto 0;
@@ -283,10 +279,8 @@ main section[style*="display: block"] {
     line-height: 1.5;
     white-space: nowrap;
     
-    /* 动态字号系统 */
     font-size: clamp(10px, 3.2vw, 14px); /* 调整clamp参数 */
     
-    /* 精准定位系统 */
     display: inline-block;
     position: relative;
     left: 50%;
@@ -295,7 +289,6 @@ main section[style*="display: block"] {
     padding: 0 2%;
 }
 
-/* iPhone SE特别适配 */
 @media (max-width: 375px) and (max-height: 667px) {
     .copyright-text {
         font-size: clamp(8px, 3.5vw, 10px);
@@ -303,7 +296,6 @@ main section[style*="display: block"] {
     }
 }
 
-/* 桌面端优化 */
 @media (min-width: 992px) {
     .copyright-text {
         font-size: 0.95rem !important;
@@ -311,7 +303,6 @@ main section[style*="display: block"] {
     }
 }
 
-/* 锁界面 */
 .right-click-tip {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
@@ -335,7 +326,6 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     user-select: none;
 }
 
-/* 鼠标静置，黑色提示框提示 */
 /* .custom-tooltip {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
@@ -364,31 +354,26 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     left: 10px;
 }    
 
-
 body {
     font-size: 16px; /* 基础字体大小 */
 }
-/* 以rem为单位设置其他元素的字体大小，rem相对于根元素（html）的字体大小 */
+
 .section-title {
     font-size: 1.5rem; 
 }
-/* 以vw为单位设置某些元素的宽度，vw相对于视口宽度 */
+
 .horizontal-links {
     grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
     gap: 20px;
     margin: 20px 0;
 }
 
-/* 小屏幕适配，当屏幕宽度小于等于 480px 时，只显示一个框 */
 @media (max-width: 480px) {
    .horizontal-links {
         grid-template-columns: 1fr;
     }
 }
 
-
-
-    /* 手机端 logo 样式调整 */
    .logo {
         width: 100%; /* 让 logo 容器宽度占满侧边栏 */
         display: flex;
@@ -401,16 +386,13 @@ body {
         margin: 0; /* 移除图片的外边距 */
     }  
 
-
-     /* 收窄手机端平台使用说明和快速入口的框 */
    .guide-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 调整最小宽度来收窄框 */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     justify-content: center; /* 水平居中 */
 }
 
-/* 新增样式，用于标题文字右移 */
 .title-shift {
     margin-left: 40px !important;
 }    
@@ -419,3 +401,341 @@ a {
     text-decoration: none;
     color: #2f00ff;
 }
+
+.search-box {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto !important;
+    padding: 0 20px;
+}
+
+
+#engine-selector {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    min-width: 80px;
+}
+
+#engine-options {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1;
+    margin-top: 40px;
+}
+
+.engine-option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    flex: 1;
+    margin-right: 0;
+    min-width: 0; /* 防止在移动端溢出 */
+}
+
+#search-btn {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .search-box {
+        flex-direction: column;
+        margin: 20px auto !important;
+        padding: 0 15px;
+    }
+    
+    #engine-selector {
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: -1px; /* 消除重叠边框 */
+    }
+    
+    #search-input {
+        border: 1px solid #ccc;
+        border-radius: 0;
+        width: 100%;
+    }
+    
+    #search-btn {
+        border-radius: 0 0 5px 5px;
+        width: 100%;
+    }
+    
+    #engine-options {
+        width: 100%;
+        margin-top: 0;
+        position: relative;
+    }
+}
+
+/* iPad适配 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .search-box {
+        max-width: 90%;
+    }
+}
+
+.opinion-nav {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  .opinion-nav:hover {
+    transform: scale(1.05);
+    background: rgba(52, 152, 219, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .opinion-img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2px;
+    opacity: 0.9;
+  }
+  
+  .opinion-text {
+    font-size: 8px;
+    font-weight: 500;
+  }
+  
+  .opinion-cont {
+    position: absolute;
+    right: 0;
+    bottom: 55px;
+    width: 130px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+  }
+  
+  .opinion-nav.active .opinion-cont {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .opinion-box {
+    padding: 8px 0;
+  }
+  
+  .opinion-list {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .opinion-list:hover {
+    background: rgba(245, 245, 245, 0.7);
+  }
+  
+  .opinion-list i {
+    margin-right: 8px;
+    color: rgba(52, 152, 219, 0.9);
+    width: 14px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .opinion-list span {
+    font-size: 13px;
+    color: #555;
+  }
+  
+  #get-top {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  #get-top.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  #get-top:hover {
+    background: rgba(52, 152, 219, 0.9);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #get-top i {
+    font-size: 18px;
+  }
+  
+  .custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 0;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s ease;
+    overflow: hidden;
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  .modal-header {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 15px 20px;
+    position: relative;
+  }
+  
+  .modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .close-modal {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .close-modal:hover {
+    color: #eee;
+  }
+  
+  .modal-body {
+    padding: 25px 20px;
+    text-align: center;
+  }
+  
+  .modal-body img {
+    max-width: 100px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .modal-body p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  /* 响应式适配 */
+  @media (max-width: 768px) {
+    .opinion-nav {
+      right: 15px;
+      bottom: 80px;
+      width: 40px;
+      height: 40px;
+    }
+    
+    #get-top {
+      right: 15px;
+      bottom: 20px;
+      width: 40px;
+      height: 40px;
+    }
+    
+    .opinion-img {
+      width: 18px;
+      height: 18px;
+    }
+    
+    .opinion-text {
+      font-size: 9px;
+    }
+    
+    .opinion-cont {
+      width: 120px;
+      bottom: 50px;
+    }
+    
+    #get-top i {
+      font-size: 16px;
+    }
+    
+    .modal-content {
+      margin: 20% auto;
+      width: 85%;
+    }
+    
+    .modal-body img {
+      max-width: 80px;
+    }
+  }
