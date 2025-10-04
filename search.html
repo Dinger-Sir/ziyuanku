@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>大学一点通工具箱</title>
+    <title>搜索工具 - 大学一点通工具箱</title>
     <link rel="icon" href="./ico/大学一点通.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./ico/大学一点通.ico" type="image/x-icon">
     <link rel="icon" type="image/png" href="./ico/16x16.png" sizes="16x16">
@@ -20,19 +20,19 @@
         <nav class="sidebar">
             <button id="sidebar-toggle" class="sidebar-toggle"><i class="fas fa-bars"></i></button>
             <div class="logo">
-                <a href="index.html" class="logo-link" onclick="switchSection('home')">
+                <a href="index.html">
                     <img src="img/DaXueYDT.jpg" alt="大学一点通">
                 </a>
             </div>
             <ul>
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link active">
+                    <a href="index.html" class="nav-link">
                         <i class="fas fa-home"></i>
                         <span><strong>首页</strong></span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="search.html" class="nav-link">
+                    <a href="search.html" class="nav-link active">
                         <i class="fas fa-compass"></i>
                         <span>浏览器</span>
                     </a>
@@ -72,60 +72,27 @@
 
         <!-- 主内容区 -->
         <main class="main-content">
-            <!-- 首页 -->
-            <section id="home">
-                <div class="hero-section">
-                    <h1>『大学一点通』工具箱</h1>
-                    <p><img src="img/欢迎关注“大学一点通”公众号！.jpg" width="150px" alt="二维码"></p>
-                    <br>
-                    <p>你想要的资源这里应有尽有</p>
-                    <p>请持续关注"大学一点通"公众号</p>
-                </div>
-
-                <div class="guide-cards">
-                    <div class="guide-card">
-                        <h3><i class="fas fa-info-circle"></i>平台使用说明</h3>
-                        <ul>
-                            <li> <a href="https://a1q3lqczk3.feishu.cn/docx/SNaydTbu4oedVMxq53scOTF8nme">软件下载指南（点击跳转，务必阅读）</a></li>
-                            <li>本平台所有资源来自互联网搜集和网友提供，仅供学习研究使用，不得用于商业用途，请在24小时内删除！</li>
-                            <li>版权归原作者及其公司所有，如果你喜欢，请购买正版。如果侵权，请联系删除。</li>
-                            <br>
-                            <p><strong>【版权声明】</strong></p>
-                            <p>1、由于平台资源是由互联网搜集整理而成，版权均归原作者所有。本平台仅提供一个观摩学习的环境，不对任何资源负法律责任。</p>
-                            <p>2、若无意中侵犯到您的版权利益，请后台联系我们，我们会在收到信息后第一时间给予处理。</p>
-                            <p>3、所有资源仅供学习交流之用，请勿用作商业用途，并请于下载后24小时内删除，如果喜欢，请自行购买正版，谢谢。</p>
-                            <br>
-                            <p><strong>【附】</strong></p>
-                            <li>根据二〇〇二年一月一日《计算机软件保护条例》规定：为了学习和研究软件内含的设计思想和原理，通过安装、显示、传输或者存储软件等方式使用软件的，可以不经软件著作权人许可，不向其支付报酬！</li>
-                            <br>
-                            <p>鉴于此，也希望大家按此说明研究软件！谢谢~</p>
-                        </ul>
-                    </div>
-                    
-                    <div class="guide-card">
-                        <h3><i class="fas fa-link"></i>快速入口</h3>
-                        <div class="horizontal-links">
-                            <div class="horizontal-link">
-                                <a href="video-resources.html">影视资源</a>
-                            </div>
-                            <div class="horizontal-link">
-                                <a href="software.html">电脑软件</a>
-                            </div>
-                            <div class="horizontal-link">
-                                <a href="ai-tools.html">AI工具</a>
-                            </div>
-                            <div class="horizontal-link">
-                                <a href="textbook-answers.html">课本答案</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
+            <div class="category-container">
+                <div class="main-category">
+                                  <!-- 搜索框 -->
+        <div class="search-box" style="display: flex; margin-left: 270px; padding: 30px; width: 60%; max-width: 800px;">
+            <div id="engine-selector" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px 0 0 5px; cursor: pointer; background-color: white; display: flex; align-items: center;">
+                <span class="engine-name">百度</span>
+                <i class="fas fa-caret-down" style="margin-left: 5px;"></i>
+            </div>
+            <div id="engine-options" style="display: none; position: absolute; background: white; border: 1px solid #ccc; border-radius: 5px; z-index: 1; margin-top: 40px;">
+                <div class="engine-option" data-engine="baidu" style="padding: 10px; cursor: pointer;">百度</div>
+                <div class="engine-option" data-engine="sogou" style="padding: 10px; cursor: pointer;">搜狗</div>
+                <div class="engine-option" data-engine="bing" style="padding: 10px; cursor: pointer;">必应</div>
+                <div class="engine-option" data-engine="google" style="padding: 10px; cursor: pointer;">谷歌</div> 
+            </div>
+            <input type="text" id="search-input" placeholder="输入搜索内容" style="padding: 10px; border: 1px solid #ccc; border-left: none; flex: 1; margin-right: 0;">
+            <button id="search-btn" style="padding: 10px 20px; background: #007BFF; color: white; border: none; border-radius: 0 5px 5px 0; cursor: pointer;">大学一点通搜索</button>
+        </div>
+        </div>
+        </div>
     <script src="js/js/script.js"></script>
-
-        <!-- 弹窗容器 -->
+            <!-- 弹窗容器 -->
 <div id="custom-modal" class="custom-modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -167,11 +134,5 @@
   </div>
 
   <div id="right-click-tip" class="right-click-tip">网站不支持复制！</div>
-
-    <footer class="site-footer">
-        <div class="copyright-text">
-            由「大学一点通」团队提供技术支持
-        </div>
-    </footer>
 </body>
 </html>

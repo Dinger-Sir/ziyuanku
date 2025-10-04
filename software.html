@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>搜索工具 - 大学一点通工具箱</title>
+        <link rel="icon" href="./ico/大学一点通.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./ico/大学一点通.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" href="./ico/16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="./ico/32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="./ico/48x48.png" sizes="48x48">
+        <link rel="icon" type="image/png" href="./ico/128x128.png" sizes="128x128">
+        <link rel="icon" type="image/png" href="./ico/256x256.png" sizes="256x256">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="css/css/style.css">
+    </head>
+<body>
+    <div class="container">
+        <!-- 侧边栏 -->
+        <nav class="sidebar">
+            <button id="sidebar-toggle" class="sidebar-toggle"><i class="fas fa-bars"></i></button>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/DaXueYDT.jpg" alt="大学一点通">
+                </a>
+            </div>
+            <ul>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span><strong>首页</strong></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="search.html" class="nav-link active">
+                        <i class="fas fa-compass"></i>
+                        <span>浏览器</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="ai-tools.html" class="nav-link">
+                        <i class="fas fa-robot"></i>
+                        <span>AI工具</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="video-resources.html" class="nav-link">
+                        <i class="fas fa-film"></i>
+                        <span>影视资源</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="software.html" class="nav-link">
+                        <i class="fas fa-laptop"></i>
+                        <span>电脑软件</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="textbook-answers.html" class="nav-link">
+                        <i class="fas fa-book"></i>
+                        <span>课本答案</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="tools.html" class="nav-link">
+                        <i class="fas fa-tools"></i>
+                        <span>实用工具</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+        <section id="c-section">
+            <h2 class="section-title">软件下载</h2>
+            <div class="category-container">
+                <!-- 主要分类1 -->
+                <div class="category-group">
+                    <h3>办公软件</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub1'); return false;">Office</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub2'); return false;">WPS</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub3'); return false;">Project</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub4'); return false;">Visio</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub5'); return false;">Xmind</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub6'); return false;">EdrawMax</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub7'); return false;">OfficeSuite</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub8'); return false;">Typora</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub9'); return false;">Draw.io</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub10'); return false;">SimpleMind</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub11'); return false;">Freeplane</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub12'); return false;">Sketchpad(几何画板）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub13'); return false;">手写模拟器</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub14'); return false;">OCR文字识别</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub15'); return false;">LocalSend</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub16'); return false;">Escrcpy</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub17'); return false;">VueScan</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub18'); return false;">ToDoList</a>
+                        </div>
+                        <!-- 其他链接 -->
+                    </div>
+                </div>
+                
+                <!-- 主要分类2 -->
+                <div class="category-group">
+                    <h3>图片处理</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub19'); return false;">Photoshop（PS+插件）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub20'); return false;">Lightroom（Lr）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub21'); return false;">illustrator（Ai）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub22'); return false;">Nik Collection</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub23'); return false;">InDesign（Id）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub24'); return false;">InCopy（Ic）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub25'); return false;">ACDSee</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub26'); return false;">光影魔术手</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub27'); return false;">QuarkXPress</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub28'); return false;">Clip Studio Paint</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub29'); return false;">Luminar Neo</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub30'); return false;">Luminar AI</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub31'); return false;">DxO PhotoLab</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub32'); return false;">DxO FilmPack</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub33'); return false;">DxO PureRAW</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub34'); return false;">DxO ViewPoint</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub35'); return false;">Topaz Gigapixel Ai</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub36'); return false;">Topaz Photo Ai</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub37'); return false;">Topaz DeNoise Al</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub38'); return false;">Aiarty Image</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub39'); return false;">Capture One</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub40'); return false;">SketchBook</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub41'); return false;">Bridge（Br）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub42'); return false;">Corel Painter</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub43'); return false;">PaintTool SAI</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub44'); return false;">Krita</a>
+                        </div>
+                        <!-- 其他链接 -->
+                    </div>
+                </div>
+        
+                 <!-- 主要分类3 -->
+                 <div class="category-group">
+                    <h3>视频编辑</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub101'); return false;">Premier（Pr）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub102'); return false;">Pr插件库</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub103'); return false;">Pr Element (Pr简化版)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub104'); return false;">After Effects（AE）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub105'); return false;">AE插件库</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub106'); return false;">达芬奇</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub107'); return false;">Edius</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub108'); return false;">Media Encode（Me）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub109'); return false;">Topaz Video AI</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub110'); return false;">Prelude</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub111'); return false;">Freemake Video Converter</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub112'); return false;">威力导演</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub113'); return false;">格式工厂</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub114'); return false;">快剪辑</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub115'); return false;">剪映</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub116'); return false;">CapCut</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 主要分类4 -->
+                <div class="category-group">
+                    <h3>音频编辑</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub201'); return false;">Audition（Au）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub202'); return false;">Cubase</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub203'); return false;">Nuendo</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub204'); return false;">Ableton Live</a>
+                        </div> 
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub205'); return false;">Goldwave</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub206'); return false;">Audacity</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 主要分类5 -->
+                <div class="category-group">
+                    <h3>动画制作</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub301'); return false;">Maya</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub302'); return false;">Cinema 4D（C4D）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub303'); return false;">Octane for C4D</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub304'); return false;">Arnold（阿诺德）for C4D</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub305'); return false;">Corona for C4D</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub306'); return false;">Character Animator（Ch）</a>
+                        </div>
+                    </div>
+                </div>
+        
+                 <!-- 主要分类6 -->
+                 <div class="category-group">
+                    <h3>AutoCAD</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub401'); return false;">CAD</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub402'); return false;">CAD精简版</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub403'); return false;">CAD机械版</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub404'); return false;">CAD建筑版</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub405'); return false;">CAD电气版</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub406'); return false;">CAD MEP</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub407'); return false;">CAD Plant 3D</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub408'); return false;">CAD Map 3D</a>
+                        </div>
+                    </div>
+                </div>
+        
+                 <!-- 主要分类7 -->
+                 <div class="category-group">
+                    <h3>3D设计</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub501'); return false;">3ds Max</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub502'); return false;">V-ray for 3ds Max</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub503'); return false;">Corona for 3ds Max</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub504'); return false;">Lumion</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub505'); return false;">SketchUp（草图大师）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub506'); return false;">V-Ray for SketchUp</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub507'); return false;">坯子库 for SketchUp</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub508'); return false;">Marmoset Toolbag（八猴）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub509'); return false;">Substance 3D Designer</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub510'); return false;">Substance 3D Painter</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub511'); return false;">Substance 3D Sampler</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub512'); return false;">Zbrush</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub513'); return false;">Blender</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub514'); return false;">ArchiCAD</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub515'); return false;"> KeyShot</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub516'); return false;">CorelCAD</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub517'); return false;">Dimension（Dn）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub518'); return false;">Artlantis</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub519'); return false;">Modo</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub520'); return false;">SideFX Houdini FX</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub521'); return false;">SimLab Compose</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub522'); return false;">Cascadeur</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub523'); return false;">酷家乐</a>
+                        </div>
+                    </div>
+                </div>
+        
+                 <!-- 主要分类8 -->
+                 <div class="category-group">
+                    <h3>机械设计</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#" onclick="switchSection('c-section-sub666'); return false;">SolidWorks(SW)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版块【Office】子界面 -->
+        <section id="c-section-sub1" style="display: none;">
+            <h2 class="section-title">Office</h2>
+            <div class="category-container">
+                <!-- Office -->
+                <div class="category-group">
+                    <!-- <h3>Office</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1R0j9c94659"  title="提取码：HHTK">Office2024（精简版）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1x0p9i94664"  title="提取码：QklR">Office2024（正式版）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1d0W9X94666"  title="提取码：ZfUP">Office LTSC 2024</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1b0l9h94667"  title="提取码：mCRp">Office 2021</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1T0R9i94669"  title="提取码：dCnh">Office 2019</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1R0C9f94670"  title="提取码：SzFH">Office 2016</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1m0h9i94673"  title="提取码：OOzG">Office 2013</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1V0B9a94674"  title="提取码：MQEs">Office 2010</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1G0C9p94679"  title="提取码：0VDh">Office 2007</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1P0F9J94680"  title="提取码：rVpi">Office 2003</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【WPS】块子界面 -->
+        <section id="c-section-sub2" style="display: none;">
+            <h2 class="section-title">WPS</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1i0D9d94699"  title="提取码：RKJn">WPS2024（官方版）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1b0r9C94700"  title="提取码：cItM">WPS2023（官方版）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1T0u9L94702"  title="提取码：ESsE">WPS2021（官方版）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1W0Z9v94704"  title="提取码：FVBD">WPS2019（官方版）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1e0Y9F94705"  title="提取码：UZ1s">WPS2019（考试版）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1s0t9q94706"  title="提取码：TtAU">WPS2016（官方版）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1r0R9P94707"  title="提取码：ewYh">WPS2013（官方版）</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【Project】块子界面 -->
+        <section id="c-section-sub3" style="display: none;">
+            <h2 class="section-title">Project</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1F0q9I94838"  title="提取码：suIa">Project2024</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1s0Y9E94840"  title="提取码：ua9P">Project2021</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1r0P9p94841"  title="提取码：89LH">Project2019</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1G0l9v94843"  title="提取码：phfH">Project2016</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1U0T9d94844"  title="提取码：eKN8">Project2013</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1B0R9g94845"  title="提取码：1EDt">Project2010</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1i0E9K94848"  title="提取码：oVqZ">Project2007</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【Visio】块子界面 -->
+        <section id="c-section-sub4" style="display: none;">
+            <h2 class="section-title">Visio</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1c0H9h94850"  title="提取码：R7MY">Visio2024</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1Z0x9Z94852"  title="提取码：Y1n6">Visio2021</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1q0d9v94853"  title="提取码：SxJD">Visio2019</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1k0G9K94856"  title="提取码：XWka">Visio2016</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1h0Z9Z94857"  title="提取码：Bkkm">Visio2013</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1x0A9j94858"  title="提取码：fbWd">Visio2010</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1g0L9v94865"  title="提取码：kZ2k">Visio2007</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1y0P9D94870"  title="提取码：4jsQ">Visio2003</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- C版【Xmind】块子界面 -->
+        <section id="c-section-sub5" style="display: none;">
+            <h2 class="section-title">Xmind</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1D0x9C94872"  title="提取码：2wDr">Xmind2025</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1Z0k9G94874"  title="提取码：8DcH">Xmind2024</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1q0t9k94875"  title="提取码：WKUo">Xmind2023</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1r0R9P94878"  title="提取码：29JO">Xmind2022</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1J0X9K94887"  title="提取码：eYLG">Xmind ZEN2021</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1i0Q9C94893"  title="提取码：c8vm">Xmind ZEN2020</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1Y0A9e94900"  title="提取码：807C">Xmind ZEN2019</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1r0j9G94901"  title="提取码：CfKO">Xmind 8</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【EdrawMax】块子界面 -->
+        <section id="c-section-sub6" style="display: none;">
+            <h2 class="section-title">EdrawMax</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1v0i9J94903"  title="提取码：kJw0">EdrawMax 14.1</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1w0k9N94904"  title="提取码：UD5N">EdrawMax 13.5</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【OfficeSuite】块子界面 -->
+        <section id="c-section-sub7" style="display: none;">
+            <h2 class="section-title">OfficeSuite</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#">OfficeSuite 8.90</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#">OfficeSuite 8.70</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【Typora】块子界面 -->
+        <section id="c-section-sub8" style="display: none;">
+            <h2 class="section-title">Typora</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#">Typora 1.10.8</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#">Typora 1.9.5</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#">Typora 1.9.4</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#">Typora 1.9.3</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【Draw.io】块子界面 -->
+        <section id="c-section-sub9" style="display: none;">
+            <h2 class="section-title">Draw.io</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#">Draw.io</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【SimpleMind】块子界面 -->
+        <section id="c-section-sub10" style="display: none;">
+            <h2 class="section-title">SimpleMind</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#">SimpleMind Pro</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【Freeplane】块子界面 -->
+        <section id="c-section-sub11" style="display: none;">
+            <h2 class="section-title">Freeplane</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#">Freeplane 1.12</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【Sketchpad】块子界面 -->
+        <section id="c-section-sub12" style="display: none;">
+            <h2 class="section-title">Sketchpad</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#">Sketchpad 5.0.6</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【手写模拟器】块子界面 -->
+        <section id="c-section-sub13" style="display: none;">
+            <h2 class="section-title">手写模拟器</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#">手写模拟器 2.2</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【OCR文字识别】块子界面 -->
+        <section id="c-section-sub14" style="display: none;">
+            <h2 class="section-title">OCR文字识别</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#">天若OCR文字识别4.48</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#">Panda OCR2.1</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#">离线 OCR</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="#">OCR工具集1.1</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【Localsend】块子界面 -->
+        <section id="c-section-sub15" style="display: none;">
+            <h2 class="section-title">Localsend</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#">Localsend 1.16.1</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【Escrcpy】块子界面 -->
+        <section id="c-section-sub16" style="display: none;">
+            <h2 class="section-title">Escrcpy</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#">Escrcpy</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【VueScan】块子界面 -->
+        <section id="c-section-sub17" style="display: none;">
+            <h2 class="section-title">VueScan</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#">VueScan 9.8.43</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【ToDoList】块子界面 -->
+        <section id="c-section-sub18" style="display: none;">
+            <h2 class="section-title">ToDoList</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>主要分类</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="#">ToDoList 9.0.6</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【Photoshop】块子界面 -->
+        <section id="c-section-sub19" style="display: none;">
+            <h2 class="section-title">Photoshop（PS+插件）</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <h3>PS 2025</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1e0B7U51893"  title="提取码：dI5x">PS2025v26.6(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1b0A7r51584"  title="提取码：PTeC">PS2025v26.5(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1F0f7s51632"  title="提取码：2qej">PS2025v26.3(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1E0S7I51640"  title="提取码：430K">PS2025v26.2(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1s0b7h51653"  title="提取码：CfRs">PS2025v26.1(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1L0c7o51654"  title="提取码：fJxs">PS2025v26.0(64bit)</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+        
+                    <h3>PS 2024</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1h0G7O51656"  title="提取码：aD9X">PS2024 v25.12(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1i0a7k51659"  title="提取码：YATD">Ps2024v25.11(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1F0F7y51679"  title="提取码：EmDM">PS2024v25.9(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1Q0J7A51714"  title="提取码：romB">PS2024v25.7(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1R0d7b51720"  title="提取码：9kmY">PS2024v25.6(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1o0k7B51725"  title="提取码：ri7X">PS2024(64bit)</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                    <h3>PS 2023</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1E0V7M51735"  title="提取码：YnU6">PS2023</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                    <h3>PS 2022</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1A0K7c51736"  title="提取码：5ldB">PS2022</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                    <h3>PS 2021</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1u0y7I51738"  title="提取码：4LGI">PS2021</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                    <h3>PS 2020</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1L0e7z51741"  title="提取码：l1si">PS2020</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                    <h3>PS 2019</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1V0V7x51744"  title="提取码：4yxs">PS2019</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                    <h3>PS 2018</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1C0I7q51746"  title="提取码：vBv3">PS2018</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                    <h3>PS 2017</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1u0d7e51750"  title="提取码：NlIt">PS2017</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                    <h3>PS 2015</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1L0j7b51751"  title="提取码：l9kN">PS2015</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                    <h3>PS CS6</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1p0e7j51753"  title="提取码：6Wge">PS CS6</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                    <h3>PS CS5</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1u0k7H51756"  title="提取码：VpOY">PS CS5</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+        
+                    <h3>Photoshop Elements</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1w0I9Q42726"  title="提取码：KNdl">Photoshop Elements 2025</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1r0k9H42738"  title="提取码：H6ve">Photoshop Elements 2024</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1d0Z9C42741"  title="提取码：GUhM">Photoshop Elements 2023</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1R0u9t42745"  title="提取码：aa5m">Photoshop Elements 2022</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1s0m9Q42747"  title="提取码：ICIF">Photoshop Elements 2021</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1s0K9c42748"  title="提取码：9Bqr">Photoshop Elements 2020</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                    <h3>Photoshop 插件</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1m0k9p42753"  title="提取码：BEGR">BBTools Shadow</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1w0k9T42756"  title="提取码：bRLM">Portraiture</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1i0R9Z42760"  title="提取码：ut9C">Retouch Pro</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1x0H9i42775"  title="提取码：T75S">TK Action</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1G0p9v42777"  title="提取码：3M29">Alpaca</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1o0t9R42782"  title="提取码：szJl">BBTools Shadow</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1Y0X9m42784"  title="提取码：89Xs">Beautify Panel</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1H0p9c42789"  title="提取码：3pL3">Better Grids Layout Creation Kit</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1z0B9f42791"  title="提取码：4iqk">CameraRaw</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1X0W9b42797"  title="提取码：PhDH">Coolorus</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1x0X9g42950"  title="提取码：IA7y">DR5.0</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1k0P9v43011"  title="提取码：lAcf">DxO ViewPoint</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1w0R9s43012"  title="提取码：QhAN">FilmPack</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1u0M9j43014"  title="提取码：VHx3">Fluid MasK</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1S0z9g43022"  title="提取码：X8pg">FontShaper</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1R0f9E43024"  title="提取码：3Zvt">Imagenomic Portraiture</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1b0y9O43171"  title="提取码：qr4C">Knoll Light Factory 灯光工厂</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1P0x9c43172"  title="提取码：ccfF">Lazy Nezumi Pro</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1W0i9g43185"  title="提取码：RWxb">Lumi32</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1C0k9e43199"  title="提取码：Yvkr">MUA Retouch Panel</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1E0V9M43200"  title="提取码：NXLZ">Motuion Clock</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1V0T9A43231"  title="提取码：rOnD">Nik.Collection</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1E0U9f43253"  title="提取码：i6Ax">Oniric</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1S0D9t43271"  title="提取码：fwDK">Optics</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1A0g9I43277"  title="提取码：2bL1">PSD AI EPS缩略图补丁</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1q0k9P43278"  title="提取码：YtST">PS样机生成</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1t0P9o43287"  title="提取码：R8GO">PT Portrait Studio</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1U0v9D43288"  title="提取码：10Y5">PT Portrait Studio人像修图助手</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1l0c9R43290"  title="提取码：z2Lp">PaperPanel</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1u0E9Y43292"  title="提取码：RCPz">Photographer ToolBox</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1K0w9b43294"  title="提取码：a5vb">Portraiture（人像磨皮）</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1G0a9e43303"  title="提取码：uUoI">Ps图像锐化滤镜Perfectly Clear</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1R0t9L43304"  title="提取码：y5mu">Radiant Photo</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1T0l9b43309"  title="提取码：6AoJ">Retouch4me</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1Q0V9B43313"  title="提取码：EqN4">SkinFiner</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1H0l9M43316"  title="提取码：umD6">Tiffen TDF</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1e0N9l43331"  title="提取码：p2sN">Ultimate Retouch Panel</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1U0B9Q43333"  title="提取码：TBw9">Vertus Fluid Mask</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1l0G9q43031"  title="提取码：gYGO">fonTags 字体管理预览</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1z0t9r43335"  title="提取码：GpbU">shadowify</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1m0V9B43339"  title="提取码：QqwM">人像磨皮美白滤镜Imagenomic Portraiture</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1i0u9P43340"  title="提取码：CB5v">人像色彩校正滤镜PictoColor iCorrect Portrait</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1z0l9R43344"  title="提取码：PzAe">人像降噪润色滤镜Imagenomic Noiseware</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1Z0R9E43388"  title="提取码：9M2R">信达max证件照大师</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1b0a9a43405"  title="提取码：KgY5">免费可商用字体</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1h0U9D43410"  title="提取码：9B4q">全景软件矫形Hb Panorama Corrector</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1U0g9s43443"  title="提取码：YK3g">圆角增强编辑 Corner Editor</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1g0P9m43445"  title="提取码：fQFz">字体管理预览扩展插件fonTags</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1q0a9i43446"  title="提取码：crbu">小清新日系PSD字体模板</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1m0j9H44039"  title="提取码：SO5y">工笔画</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1a0f9G44044"  title="提取码：CpMf">常用修图动作</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1q0k9w44045"  title="提取码：DpCw">水波倒影插件Flaming Pear Flood</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1x0C9a44106"  title="提取码：WotM">灯光工厂滤镜Knoll Light Factor</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1f0G9r44161"  title="提取码：QI91">矢量跟踪黑白画水墨艺术照片效果PS动作</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1d0O9a44190"  title="提取码：OJHI">线之绘滤镜Redfield Fractalius</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1J0z9p44191"  title="提取码：aRGf">蓝宝石插件 Sapphire</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1m0P9B44193"  title="提取码：c3eN">证件照大师</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1b0m9W44194"  title="提取码：UpVP">贴图插件滤镜SuperBladePro</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1F0v9J44196"  title="提取码：Ge4F">逼真的刺绣Realistic Embroidery</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1p0Y9Q44199"  title="提取码：NhiE">高光消除滤镜ShineOff</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1u0h9Q44200"  title="提取码：uWKY">黑作坊 暗黑物质 光斑纹理插件</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1D0F9s44204"  title="提取码：HHi0">Delicious Retouch Plus(Dr)5.0</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- C版【Lightroom】块子界面 -->
+        <section id="c-section-sub20" style="display: none;">
+            <h2 class="section-title">Lightroom</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <h3>Lightroom2025</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1i0q9H82092"  title="提取码：HhXI">Lr2025v14.3(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1g0I9V82098"  title="提取码：KSpO">Lr2025v14.2(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1f0x9v82103"   title="提取码：ZXAI">Lr2025v14.1(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1C0F9p82110"   title="提取码：PGBt">Lr2025v14.1(64bit)</a>
+                        </div>
+                        <!-- 其他子链接 -->
+                    </div>
+                    <h3>Lightroom2024</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1W0n9U82115"  title="提取码：F5AG">Lr2024v13.5(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1W0l9O82121"  title="提取码：OA7q">Lr2024v13.4(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1h0l9i82127"  title="提取码：kAS4">Lr2024v13.2(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1d0P9i82129"  title="提取码：1EFu">Lr2024(64bit)</a>
+                        </div>
+                </div>
+        
+                <h3>Lightroom2023</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1l0g9n82132"  title="提取码：uIoj">Lr2023</a>
+                        </div>
+                </div>
+        
+                <h3>Lightroom2022</h3>
+                <div class="horizontal-links">
+                    <div class="horizontal-link">
+                        <a href="https://pan.wo.cn/s/1Y0R9L82135"  title="提取码：Of7I">Lr2022</a>
+                    </div>
+            </div>
+            <h3>Lightroom2021</h3>
+            <div class="horizontal-links">
+                <div class="horizontal-link">
+                    <a href="https://pan.wo.cn/s/1p0E9C82138"  title="提取码：1xnk">Lr2021</a>
+                </div>
+        </div>
+        <h3>Lightroom2020</h3>
+        <div class="horizontal-links">
+            <div class="horizontal-link">
+                <a href="https://pan.wo.cn/s/1o0J9a82139"  title="提取码：eM9k">Lr2020</a>
+            </div>
+        </div>
+        <h3>Lightroom2019</h3>
+        <div class="horizontal-links">
+            <div class="horizontal-link">
+                <a href="https://pan.wo.cn/s/1O0c9C82142"  title="提取码：lcuL">Lr2019</a>
+            </div>
+        </div>
+        <h3>Lightroom2018</h3>
+        <div class="horizontal-links">
+            <div class="horizontal-link">
+                <a href="https://pan.wo.cn/s/1o0o9J82144"  title="提取码：d1o7">Lr2018</a>
+            </div>
+        </div>
+        <h3>Lightroom CS6</h3>
+        <div class="horizontal-links">
+            <div class="horizontal-link">
+                <a href="https://pan.wo.cn/s/1H0X9Z82160"  title="提取码：AOXS">Lr 6.4</a>
+            </div>
+        </div>
+        <h3>Lightroom CS5</h3>
+        <div class="horizontal-links">
+            <div class="horizontal-link">
+                <a href="https://pan.wo.cn/s/1s0b9Q94268"   title="提取码：sLVG">Lr 5.7</a>
+            </div>
+        </div>
+            </div>
+        </section>
+        
+        <!-- C版【Illustrator】块子界面 -->
+        <section id="c-section-sub21" style="display: none;">
+            <h2 class="section-title">Illustrator</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <h3>Illustrator 2025</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1X0x9v94275"  title="提取码：DPub">Ai2025v29.5(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1F0e9t94278"  title="提取码：dU3b">Ai2025v29.4(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1v0Z9u94279"  title="提取码：oScS">Ai2025v29.3(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1q0p9g94280"   title="提取码：Ci4y">Ai2025v29.2(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1a0O9Q94283"   title="提取码：fHkF">Ai2025v29.1(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1w0o9E94285"   title="提取码：CoHh">Ai2025v29.0(64bit)</a>
+                        </div>
+                    </div>
+        
+                    <h3>Illustrator 2024</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1y0N9O94288"  title="提取码：LfrR">Ai2024v28.6(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1T0P9g94289"   title="提取码：vY4y">Ai2024v28.5(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1h0B9n94290"   title="提取码：ZBrI">Ai2024(64bit)</a>
+                        </div>
+                    </div>
+                    
+                    <h3>Illustrator 2023</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1h0b9m94291"  title="提取码：Ij5k">Ai2023</a>
+                        </div>
+                    </div>
+                    
+                    <h3>Illustrator 2022</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1T0k9s94292"   title="提取码：zoen">Ai2022</a>
+                        </div>
+                    </div>
+                    
+                    <h3>Illustrator 2021</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1J0x9m94294"   title="提取码：vRWp">Ai2021</a>
+                        </div>
+                    </div>
+                    <h3>Illustrator 2020</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1a0U9Q94297"  title="提取码：FNlD">Ai2020</a>
+                        </div>
+                    </div>
+                    <h3>Illustrator 2019</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1Q0N9F94298"  title="提取码：QVln">Ai2019</a>
+                        </div>
+                    </div>
+                    <h3>Illustrator 2018</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1L0t9b94300"  title="提取码：iArh">Ai2018</a>
+                        </div>
+                    </div>
+                    <h3>Illustrator 2017</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1a0s9E94301"  title="提取码：wgNz">Ai2017</a>
+                        </div>
+                    </div>
+                    <h3>Illustrator 2015</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1n0u9s94303"  title="提取码：O2Av">Ai2015</a>
+                        </div>
+                    </div>
+                    <h3>Illustrator CS6</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1b0E9m94304"  title="提取码：3uBc">Ai CS6</a>
+                        </div>
+                    </div>
+                    <h3>Illustrator CS5</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1W0W9n94305"  title="提取码：lQsD">Ai CS5</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        <!-- 其他子界面... -->
+        
+        <!-- C版【Nik Collection】块子界面 -->
+        <section id="c-section-sub22" style="display: none;">
+            <h2 class="section-title">Nik Collection</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <h3>Nik Collection</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1P0l9p94552"  title="提取码：tDZr">Nik Collection6.12(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1U0r9C94554"  title="提取码：CfE0">Nik Collection6.10.0(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1l0o9T94558"   title="提取码：Vloc">Nik Collection6.6(64bit)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        
+            <!-- C版【InCopy】块子界面 -->
+        <section id="c-section-sub24" style="display: none;">
+            <h2 class="section-title">InCopy（Ic）</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <h3>InCopy 2025</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1d0H9B94309"   title="提取码：1rv5">InCopy2025v20.2(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1M0u9t94310"   title="提取码：85Wv">InCopy2025v20.1(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1h0a9s94312"   title="提取码：jEUU">InCopy2025v20.0.1(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1b0I9G94313"   title="提取码：477M">InCopy2025v20.0(64bit)</a>
+                        </div>
+                    </div>
+                   
+                    <h3>InCopy 2024</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1G0o9G94337"   title="提取码：FlZp">InCopy 2024 v19.5(64bit)</a>
+                        </div>
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1n0s9M94339"   title="提取码：UIld">InCopy2024(64bit)</a>
+                        </div>
+                    </div>
+        
+                    <h3>InCopy 2023</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1s0x9L94343"   title="提取码：K4rQ">InCopy 2023</a>
+                        </div>
+                    </div>
+        
+                    <h3>InCopy 2022</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1n0t9q94344"   title="提取码：nZgv">InCopy 2022</a>
+                        </div>
+                    </div>
+        
+                    <h3>InCopy 2021</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1g0A9K94350"   title="提取码：ggRq">InCopy 2021</a>
+                        </div>
+                    </div>
+        
+                    <h3>InCopy 2020</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1Y0s9y94351"   title="提取码：TTe5">InCopy 2020</a>
+                        </div>
+                    </div>
+        
+                    <h3>InCopy 2019</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1A0U9h94353"   title="提取码：mOQC">InCopy 2019</a>
+                        </div>
+                    </div>
+        
+                    <h3>InCopy 2018</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1e0F9N94361"   title="提取码：N8GX">InCopy 2018</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        
+                <!-- C版【ACDSee】块子界面 -->
+        <section id="c-section-sub25" style="display: none;">
+            <h2 class="section-title">ACDSee</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <h3>ACDSee 2025</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1b0Q9J94486"  title="提取码：4Tha">ACDSee 2025</a>
+                        </div>
+                    </div>
+                   
+                    <h3>ACDSee 2024</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1a0R9i94492"  title="提取码：sYnw">ACDSee 2024</a>
+                        </div>
+                    </div>
+        
+                    <h3>ACDSee 2023</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1D0i9O94494"  title="提取码：k3ce">ACDSee 2023</a>
+                        </div>
+                    </div>
+        
+                    <h3>ACDSee 2022</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1w0H9c94495"  title="提取码：i8G1">ACDSee 2022</a>
+                        </div>
+                    </div>
+        
+                    <h3>ACDSee 2021</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1E0i9a94362"    title="提取码：cyOo">ACDSee 2021</a>
+                        </div>
+                    </div>
+        
+                    <h3>ACDSee 2020</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1X0k9D94499"   title="提取码：96vp">ACDSee 2020</a>
+                        </div>
+                    </div>
+        
+                    <h3>ACDSee 20</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1v0w9Y94500"   title="提取码：yYvq">ACDSee 20</a>
+                        </div>
+                    </div>
+        
+                    <h3>ACDSee 10</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1y0U9q94512"   title="提取码：ugo7">ACDSee 10</a>
+                        </div>
+                    </div>
+        
+                    <h3>ACDSee 9</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1E0Z9G94517"   title="提取码：1G4P">ACDSee 9</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        
+               <!-- C版【光影魔术手】块子界面 -->
+        <section id="c-section-sub26" style="display: none;">
+            <h2 class="section-title">光影魔术手</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>光影魔术手</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1D0b9G94524"  title="提取码：tZXN">光影魔术手4.6.1</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        
+             <!-- C版【QuarkXPress】块子界面 -->
+        <section id="c-section-sub27" style="display: none;">
+            <h2 class="section-title">QuarkXPress</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>QuarkXPress</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1m0K9K94531"   title="提取码：fdUT">QuarkXPress 2025</a>
+                        </div> 
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1u0N9t94532"   title="提取码：Lzw9">QuarkXPress 2024</a>
+                        </div>  
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1I0K9Q94534"   title="提取码：FJVY">QuarkXPress 2023</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            </section>
+        
+             <!-- C版【Clip Studio Paint】块子界面 -->
+        <section id="c-section-sub28" style="display: none;">
+            <h2 class="section-title">Clip Studio Paint</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>Clip Studio Paint</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1y0E9D94537"   title="提取码：23kW">Clip Studio Paint 3.1</a>
+                        </div> 
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1P0L9H94538"   title="提取码：wOLD">Clip Studio Paint 2.3.4</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            </section>
+        
+                 <!-- C版【Luminar Neo】块子界面 -->
+        <section id="c-section-sub29" style="display: none;">
+            <h2 class="section-title">Luminar Neo</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <!-- <h3>Luminar Neo</h3> -->
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1C0M9U94541"   title="提取码：SyfT">Luminar Neo 1.23.0</a>
+                        </div> 
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1D0i9T94545"   title="提取码：dcWi">Luminar Neo 1.21.2</a>
+                        </div> 
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1c0A9r94547"   title="提取码：VONe">Luminar Neo 1.19.0</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            </section>
+        
+             <!-- C版【Pr】块子界面 -->
+        <section id="c-section-sub101" style="display: none;">
+            <h2 class="section-title">Premier（Pr）</h2>
+            <div class="category-container">
+                <!-- 主要分类 -->
+                <div class="category-group">
+                    <h3>Pr 2025</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1L0L9M42626"  title="密码：KVnF">Pr2025v25.3(64bit)</a>
+                        </div> 
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1Y0b9O42628"  title="密码：sbG8">Pr2025v25.2(64bit)</a>
+                        </div> 
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1d0R9q42630"   title="密码：lsbR">Pr2025v25.1(64bit)</a>
+                        </div>  
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1r0T9a42633"   title="密码：EyUK">Pr2025v25.0(64bit)</a>
+                        </div>  
+                    </div>
+        
+                    <h3>Pr 2024</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1q0a9N42648"   title="密码：3dEb">Pr2024v24.5(64bit)</a>
+                        </div> 
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1O0f9q42649"   title="密码：eeW1">Pr2024v24.3(64bit)</a>
+                        </div> 
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1W0W9k42651"   title="密码：mJeZ">Pr2024(64bit)</a>
+                        </div>  
+                    </div>
+        
+                    <h3>Pr 2023</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1W0X9o42690"   title="密码：qkCo">Pr2023(64bit)</a>
+                        </div> 
+                    </div>
+        
+                    <h3>Pr 2022</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1T0I9L42691"  title="密码：AtTU">Pr2022(64bit)</a>
+                        </div> 
+                    </div>
+        
+                    <h3>Pr 2021</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1K0h9M42692"  title="密码：UGAU">Pr2021(64bit)</a>
+                        </div> 
+                    </div>
+        
+                    <h3>Pr 2020</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1b0F9j42693"  title="密码：yLYM">Pr2020(64bit)</a>
+                        </div> 
+                    </div>
+        
+                    <h3>Pr 2019</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1U0u9E42695"  title="密码：qDbI">Pr2019(64bit)</a>
+                        </div> 
+                    </div>
+        
+                    <h3>Pr 2018</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1U0R9v42697"  title="密码：I8xv">Pr2018(64bit)</a>
+                        </div> 
+                    </div>
+        
+                    <h3>Pr 2017</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1u0w9c42699"   title="密码：Yanw">Pr2017(64bit)</a>
+                        </div> 
+                    </div>
+        
+                    <h3>Pr 2015</h3>
+                    <div class="horizontal-links">
+                        <div class="horizontal-link">
+                            <a href="https://pan.wo.cn/s/1A0x9X42713"  title="密码：98Mz">Pr2015(64bit)</a>
+                        </div> 
+                    </div>
+        
+                </div>
+            </div>
+            </section>
+        
+        
+             <!-- C版【AE】块子界面 -->
+             <section id="c-section-sub104" style="display: none;">
+                <h2 class="section-title">After Effects（AE）</h2>
+                <div class="category-container">
+                    <!-- 主要分类 -->
+                    <div class="category-group">
+                        <h3>AE 2025</h3>
+                        <div class="horizontal-links">
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1j0y7C52194"  title="提取码：VBqB">Ae2025v25.4(64bit)</a>
+                            </div> 
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1P0D7L52195"  title="提取码：nSAL">Ae2025v25.3(64bit)</a>
+                            </div> 
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1z0C7n52200"  title="提取码：9z27">Ae2025v25.2(64bit)</a>
+                            </div> 
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1Z0r7J52204"  title="提取码：RXdW">Ae2025v25.1(64bit)</a>
+                            </div>  
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1w0Z7C52205"  title="提取码：gfl6">Ae2025v25.0.1(64bit)</a>
+                            </div>  
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1V0n7F52206"  title="提取码：pCZ9">Ae2025v25.0(64bit)</a>
+                            </div>  
+                        </div>
+            
+                        <h3>AE 2024</h3>
+                        <div class="horizontal-links">
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1w0l7u52222"  title="提取码：6DLk">Ae2024v24.6(64bit)</a>
+                            </div> 
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1B0u7y52224"  title="提取码：o2bg">Ae2024v24.5(64bit)</a>
+                            </div> 
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1E0V7U52270"  title="提取码：HUZi">Ae2024v24.4(64bit)</a>
+                            </div>  
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1D0P7J52272"  title="提取码：87DF">Ae2024(64bit)</a>
+                            </div>  
+                        </div>
+            
+                        <h3>AE 2023</h3>
+                        <div class="horizontal-links">
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1W0H7K52288"  title="提取码：EN6T">AE2023(64bit)</a>
+                            </div> 
+                        </div>
+            
+                        <h3>AE 2022</h3>
+                        <div class="horizontal-links">
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1F0n7a52290"  title="提取码：TFnt">AE2022(64bit)</a>
+                            </div> 
+                        </div>
+            
+                        <h3>AE 2021</h3>
+                        <div class="horizontal-links">
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1q0M7l52294"  title="提取码：PCMJ">AE2021(64bit)</a>
+                            </div> 
+                        </div>
+            
+                        <h3>AE 2020</h3>
+                        <div class="horizontal-links">
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1x0h7q52296"  title="提取码：DjyQ">AE2020(64bit)</a>
+                            </div> 
+                        </div>
+            
+                        <h3>AE 2019</h3>
+                        <div class="horizontal-links">
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1S0G7y52299"  title="提取码：akwf">AE2019(64bit)</a>
+                            </div> 
+                        </div>
+            
+                        <h3>AE 2018</h3>
+                        <div class="horizontal-links">
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1R0o7n52300"  title="提取码：bpoj">AE2018(64bit)</a>
+                            </div> 
+                        </div>
+            
+                        <h3>AE 2017</h3>
+                        <div class="horizontal-links">
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1V0K7i52303"  title="提取码：hpOi">AE2017(64bit)</a>
+                            </div> 
+                        </div>
+            
+                        <h3>AE 2015</h3>
+                        <div class="horizontal-links">
+                            <div class="horizontal-link">
+                                <a href="https://pan.wo.cn/s/1U0h7U52305"  title="提取码：DS5d">AE2015(64bit)</a>
+                            </div> 
+                        </div>
+            
+                    </div>
+                </div>
+                </section>
+            </main>
+            </div>
+
+<script src="js/js/script.js"></script>
+        <!-- 弹窗容器 -->
+        <div id="custom-modal" class="custom-modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close-modal">&times;</span>
+                <h3 id="modal-title">提示</h3>
+              </div>
+              <div class="modal-body">
+                <img id="modal-image" src="" alt="提示图片">
+                <p id="modal-message"></p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 在线咨询 -->
+          <div class="opinion-nav">
+            <img class="opinion-img" src="img/DaXueYDT.jpg" alt="在线咨询">
+            <span class="opinion-text">在线咨询</span>
+            <section class="opinion-cont">
+              <section class="opinion-box">
+                <div id="opinionIT" class="opinion-list" data-type="tech">
+                  <i class="fas fa-headset"></i>
+                  <span>商务合作</span>
+                </div>
+                <div id="opinionHR" class="opinion-list" data-type="feedback">
+                  <i class="fas fa-comments"></i>
+                  <span>问题反馈</span>
+                </div>
+                <div id="opinionFin" class="opinion-list" data-type="help">
+                  <i class="fas fa-info-circle"></i>
+                  <span>使用帮助</span>
+                </div>
+              </section>
+            </section>
+          </div>
+          
+          <!-- 回到顶部 -->
+          <div id="get-top" title="回到顶部">
+            <i class="fas fa-arrow-up"></i>
+          </div>
+        
+          <div id="right-click-tip" class="right-click-tip">网站不支持复制！</div>        
+    <footer class="site-footer">
+        <div class="copyright-text">
+            由「大学一点通」团队提供技术支持
+        </div>
+    </footer>
+</body>
+</html>
