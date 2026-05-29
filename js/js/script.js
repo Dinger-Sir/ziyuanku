@@ -179,45 +179,45 @@ document.addEventListener('DOMContentLoaded', () => {
     updateVisitCounter();
 });
 
-// ======== 访问计数器（CountAPI 服务端持久化 + localStorage 兜底） ========
+// ======== 访问计数器（即时显示 + 服务端后台同步） ========
 function updateVisitCounter() {
     var counterEl = document.getElementById('visit-counter');
     if (!counterEl) return;
 
-    var NAMESPACE = 'daxueydt';
-    var siteKey = NAMESPACE + '/site-total';
-
-    // 当前页面标识
     var pagePath = window.location.pathname.replace(/[^a-zA-Z0-9一-鿿]/g, '_');
-    var pageKey = NAMESPACE + '/page' + (pagePath || '_home');
+    var NS = 'daxueydt';
+    var siteKey = NS + '/site-total';
+    var pageKey = NS + '/page' + (pagePath || '_home');
 
-    // 本地兜底值
+    // 1. 本地立即显示（零延迟）
     var localTotal = parseInt(localStorage.getItem('site_total_visits')) || 0;
     var localPage = parseInt(localStorage.getItem('page_visits_' + pagePath)) || 0;
+    localTotal += 1;
+    localPage += 1;
+    localStorage.setItem('site_total_visits', localTotal);
+    localStorage.setItem('page_visits_' + pagePath, localPage);
 
-    // 1. 命中全站计数器（服务端）
-    fetch('https://api.countapi.xyz/hit/' + siteKey)
+    counterEl.innerHTML = '全站访问 <strong>' + localTotal + '</strong> 次 | 本页 <strong>' + localPage + '</strong> 次';
+
+    // 2. 后台异步同步到服务端（不阻塞显示）
+    var timeout = { signal: AbortSignal.timeout(4000) };
+
+    fetch('https://api.countapi.xyz/hit/' + siteKey, timeout)
         .then(function(r) { return r.json(); })
         .then(function(d) {
-            counterEl.innerHTML = '全站访问 <strong>' + d.value + '</strong> 次';
-            // 同步更新本地
             localStorage.setItem('site_total_visits', d.value);
+            counterEl.innerHTML = '全站访问 <strong>' + d.value + '</strong> 次';
         })
-        .catch(function() {
-            // 服务挂了，用本地值
-            counterEl.innerHTML = '全站访问 <strong>' + localTotal + '</strong> 次';
-        });
+        .catch(function() {});
 
-    // 2. 命中本页计数器（服务端）
-    fetch('https://api.countapi.xyz/hit/' + pageKey)
+    fetch('https://api.countapi.xyz/hit/' + pageKey, timeout)
         .then(function(r) { return r.json(); })
         .then(function(d) {
-            counterEl.innerHTML += ' | 本页 <strong>' + d.value + '</strong> 次';
             localStorage.setItem('page_visits_' + pagePath, d.value);
+            var newHTML = counterEl.innerHTML.replace(/本页 <strong>\d+<\/strong>/, '本页 <strong>' + d.value + '</strong>');
+            counterEl.innerHTML = newHTML;
         })
-        .catch(function() {
-            counterEl.innerHTML += ' | 本页 <strong>' + localPage + '</strong> 次';
-        });
+        .catch(function() {});
 }
 
 // ======== Hash 变化监听 ========
@@ -236,7 +236,13 @@ window.addEventListener('hashchange', () => {
     document.body.appendChild(tip);
 })();
 
+// 判断事件是否来自搜索框（搜索框允许操作）
+function isSearchInput(el) {
+    return el && (el.id === 'search-input' || el.closest('#search-input'));
+}
+
 document.addEventListener('contextmenu', function (e) {
+    if (isSearchInput(e.target)) return; // 搜索框允许右键
     e.preventDefault();
     const tip = document.getElementById('right-click-tip');
     if (tip) {
@@ -249,11 +255,13 @@ document.addEventListener('contextmenu', function (e) {
 });
 
 document.addEventListener('copy', function (e) {
+    if (isSearchInput(e.target)) return; // 搜索框允许复制
     e.preventDefault();
     alert('You cannot copy content of this page');
 });
 
 document.addEventListener('selectstart', function (e) {
+    if (isSearchInput(e.target)) return; // 搜索框允许选中
     e.preventDefault();
 });
 

@@ -254,22 +254,15 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     margin-left: 0;
 }
 
-/* 紧凑模式：内容少时一屏展示，不滚动 */
+/* 紧凑模式：内容少时减少间距，一屏展示不滚动 */
 .compact-page {
-    padding: 28px 40px !important;
+    padding: 30px 40px !important;
     min-height: auto !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .compact-page .section-title {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     padding-bottom: 8px;
     font-size: 1.5rem;
-}
-.compact-page .category-container {
-    max-width: 900px;
-    width: 100%;
 }
 .compact-page .category-group > h3 {
     margin: 18px 0 10px;
@@ -278,13 +271,15 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     gap: 10px;
 }
 .compact-page .horizontal-link {
-    min-height: 44px;
+    min-height: 42px;
+}
+.compact-page .horizontal-link a {
+    padding: 10px 12px;
 }
 
 @media (max-width: 768px) {
     .compact-page {
         padding: 18px !important;
-        align-items: flex-start;
     }
 }
 
@@ -617,6 +612,10 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
 }
 
 #search-input {
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+    user-select: text !important;
     padding: 10px 14px;
     border: 1px solid var(--border);
     border-left: none;
