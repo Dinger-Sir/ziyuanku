@@ -1,0 +1,22 @@
+{
+  "page": "textbook-answers",
+  "categories": [
+    {
+      "name": "新视野大学英语（读写教程）",
+      "links": [
+        { "name": "读写教程（第三版）", "url": "textbook-reading-writing-3.html" },
+        { "name": "读写教程（第三版-综合版）", "url": "textbook-reading-writing-3-comprehensive.html" },
+        { "name": "读写教程（第四版）", "url": "textbook-reading-writing-4.html" },
+        { "name": "读写教程（第四版-思政智慧版）", "url": "textbook-reading-writing-4-ideological.html" }
+      ]
+    },
+    {
+      "name": "新视野大学英语（视听教程）",
+      "links": [
+        { "name": "视听教程（第三版）", "url": "textbook-audio-visual-3.html" },
+        { "name": "视听教程（第三版-综合版）", "url": "textbook-audio-visual-3-comprehensive.html" },
+        { "name": "视听教程（第四版）", "url": "textbook-audio-visual-4.html" }
+      ]
+    }
+  ]
+}

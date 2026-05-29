@@ -1,0 +1,3273 @@
+{
+  "page": "software",
+  "mainCategories": [
+    {
+      "name": "办公软件",
+      "links": [
+        {
+          "name": "Office",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub1'); return false;"
+        },
+        {
+          "name": "WPS",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub2'); return false;"
+        },
+        {
+          "name": "Project",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub3'); return false;"
+        },
+        {
+          "name": "Visio",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub4'); return false;"
+        },
+        {
+          "name": "Xmind",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub5'); return false;"
+        },
+        {
+          "name": "EdrawMax",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub6'); return false;"
+        },
+        {
+          "name": "OfficeSuite",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub7'); return false;"
+        },
+        {
+          "name": "Typora",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub8'); return false;"
+        },
+        {
+          "name": "Draw.io",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub9'); return false;"
+        },
+        {
+          "name": "SimpleMind",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub10'); return false;"
+        },
+        {
+          "name": "Freeplane",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub11'); return false;"
+        },
+        {
+          "name": "Sketchpad(几何画板）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub12'); return false;"
+        },
+        {
+          "name": "手写模拟器",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub13'); return false;"
+        },
+        {
+          "name": "OCR文字识别",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub14'); return false;"
+        },
+        {
+          "name": "LocalSend",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub15'); return false;"
+        },
+        {
+          "name": "Escrcpy",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub16'); return false;"
+        },
+        {
+          "name": "VueScan",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub17'); return false;"
+        },
+        {
+          "name": "ToDoList",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub18'); return false;"
+        }
+      ]
+    },
+    {
+      "name": "图片处理",
+      "links": [
+        {
+          "name": "Photoshop（PS+插件）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub19'); return false;"
+        },
+        {
+          "name": "Lightroom（Lr）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub20'); return false;"
+        },
+        {
+          "name": "illustrator（Ai）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub21'); return false;"
+        },
+        {
+          "name": "Nik Collection",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub22'); return false;"
+        },
+        {
+          "name": "InDesign（Id）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub23'); return false;"
+        },
+        {
+          "name": "InCopy（Ic）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub24'); return false;"
+        },
+        {
+          "name": "ACDSee",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub25'); return false;"
+        },
+        {
+          "name": "光影魔术手",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub26'); return false;"
+        },
+        {
+          "name": "QuarkXPress",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub27'); return false;"
+        },
+        {
+          "name": "Clip Studio Paint",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub28'); return false;"
+        },
+        {
+          "name": "Luminar Neo",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub29'); return false;"
+        },
+        {
+          "name": "Luminar AI",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub30'); return false;"
+        },
+        {
+          "name": "DxO PhotoLab",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub31'); return false;"
+        },
+        {
+          "name": "DxO FilmPack",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub32'); return false;"
+        },
+        {
+          "name": "DxO PureRAW",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub33'); return false;"
+        },
+        {
+          "name": "DxO ViewPoint",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub34'); return false;"
+        },
+        {
+          "name": "Topaz Gigapixel Ai",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub35'); return false;"
+        },
+        {
+          "name": "Topaz Photo Ai",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub36'); return false;"
+        },
+        {
+          "name": "Topaz DeNoise Al",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub37'); return false;"
+        },
+        {
+          "name": "Aiarty Image",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub38'); return false;"
+        },
+        {
+          "name": "Capture One",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub39'); return false;"
+        },
+        {
+          "name": "SketchBook",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub40'); return false;"
+        },
+        {
+          "name": "Bridge（Br）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub41'); return false;"
+        },
+        {
+          "name": "Corel Painter",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub42'); return false;"
+        },
+        {
+          "name": "PaintTool SAI",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub43'); return false;"
+        },
+        {
+          "name": "Krita",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub44'); return false;"
+        }
+      ]
+    },
+    {
+      "name": "视频编辑",
+      "links": [
+        {
+          "name": "Premier（Pr）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub101'); return false;"
+        },
+        {
+          "name": "Pr插件库",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub102'); return false;"
+        },
+        {
+          "name": "Pr Element (Pr简化版)",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub103'); return false;"
+        },
+        {
+          "name": "After Effects（AE）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub104'); return false;"
+        },
+        {
+          "name": "AE插件库",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub105'); return false;"
+        },
+        {
+          "name": "达芬奇",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub106'); return false;"
+        },
+        {
+          "name": "Edius",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub107'); return false;"
+        },
+        {
+          "name": "Media Encode（Me）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub108'); return false;"
+        },
+        {
+          "name": "Topaz Video AI",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub109'); return false;"
+        },
+        {
+          "name": "Prelude",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub110'); return false;"
+        },
+        {
+          "name": "Freemake Video Converter",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub111'); return false;"
+        },
+        {
+          "name": "威力导演",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub112'); return false;"
+        },
+        {
+          "name": "格式工厂",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub113'); return false;"
+        },
+        {
+          "name": "快剪辑",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub114'); return false;"
+        },
+        {
+          "name": "剪映",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub115'); return false;"
+        },
+        {
+          "name": "CapCut",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub116'); return false;"
+        }
+      ]
+    },
+    {
+      "name": "音频编辑",
+      "links": [
+        {
+          "name": "Audition（Au）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub201'); return false;"
+        },
+        {
+          "name": "Cubase",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub202'); return false;"
+        },
+        {
+          "name": "Nuendo",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub203'); return false;"
+        },
+        {
+          "name": "Ableton Live",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub204'); return false;"
+        },
+        {
+          "name": "Goldwave",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub205'); return false;"
+        },
+        {
+          "name": "Audacity",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub206'); return false;"
+        }
+      ]
+    },
+    {
+      "name": "动画制作",
+      "links": [
+        {
+          "name": "Maya",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub301'); return false;"
+        },
+        {
+          "name": "Cinema 4D（C4D）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub302'); return false;"
+        },
+        {
+          "name": "Octane for C4D",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub303'); return false;"
+        },
+        {
+          "name": "Arnold（阿诺德）for C4D",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub304'); return false;"
+        },
+        {
+          "name": "Corona for C4D",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub305'); return false;"
+        },
+        {
+          "name": "Character Animator（Ch）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub306'); return false;"
+        }
+      ]
+    },
+    {
+      "name": "AutoCAD",
+      "links": [
+        {
+          "name": "CAD",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub401'); return false;"
+        },
+        {
+          "name": "CAD精简版",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub402'); return false;"
+        },
+        {
+          "name": "CAD机械版",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub403'); return false;"
+        },
+        {
+          "name": "CAD建筑版",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub404'); return false;"
+        },
+        {
+          "name": "CAD电气版",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub405'); return false;"
+        },
+        {
+          "name": "CAD MEP",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub406'); return false;"
+        },
+        {
+          "name": "CAD Plant 3D",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub407'); return false;"
+        },
+        {
+          "name": "CAD Map 3D",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub408'); return false;"
+        },
+        {
+          "name": "中望CAD",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub409'); return false;"
+        }
+      ]
+    },
+    {
+      "name": "3D设计",
+      "links": [
+        {
+          "name": "3ds Max",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub501'); return false;"
+        },
+        {
+          "name": "V-ray for 3ds Max",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub502'); return false;"
+        },
+        {
+          "name": "Corona for 3ds Max",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub503'); return false;"
+        },
+        {
+          "name": "Lumion",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub504'); return false;"
+        },
+        {
+          "name": "SketchUp（草图大师）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub505'); return false;"
+        },
+        {
+          "name": "V-Ray for SketchUp",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub506'); return false;"
+        },
+        {
+          "name": "坯子库 for SketchUp",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub507'); return false;"
+        },
+        {
+          "name": "Marmoset Toolbag（八猴）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub508'); return false;"
+        },
+        {
+          "name": "Substance 3D Designer",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub509'); return false;"
+        },
+        {
+          "name": "Substance 3D Painter",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub510'); return false;"
+        },
+        {
+          "name": "Substance 3D Sampler",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub511'); return false;"
+        },
+        {
+          "name": "Zbrush",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub512'); return false;"
+        },
+        {
+          "name": "Blender",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub513'); return false;"
+        },
+        {
+          "name": "ArchiCAD",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub514'); return false;"
+        },
+        {
+          "name": "KeyShot",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub515'); return false;"
+        },
+        {
+          "name": "CorelCAD",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub516'); return false;"
+        },
+        {
+          "name": "Dimension（Dn）",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub517'); return false;"
+        },
+        {
+          "name": "Artlantis",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub518'); return false;"
+        },
+        {
+          "name": "Modo",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub519'); return false;"
+        },
+        {
+          "name": "SideFX Houdini FX",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub520'); return false;"
+        },
+        {
+          "name": "SimLab Compose",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub521'); return false;"
+        },
+        {
+          "name": "Cascadeur",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub522'); return false;"
+        },
+        {
+          "name": "酷家乐",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub523'); return false;"
+        }
+      ]
+    },
+    {
+      "name": "机械设计",
+      "links": [
+        {
+          "name": "SolidWorks(SW)",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub666'); return false;"
+        }
+      ]
+    },
+    {
+      "name": "PDF编辑",
+      "links": [
+        {
+          "name": "Adobe Acrobat",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub601'); return false;"
+        },
+        {
+          "name": "PDFgear",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub602'); return false;"
+        },
+        {
+          "name": "UPDF",
+          "url": "#",
+          "onclick": "switchSection('c-section-sub603'); return false;"
+        }
+      ]
+    }
+  ],
+  "subSections": {
+    "c-section-sub1": {
+      "title": "Office",
+      "categories": [
+        {
+          "name": "Office",
+          "links": [
+            {
+              "name": "Office2024（精简版）",
+              "url": "https://pan.wo.cn/s/1R0j9c94659",
+              "title": "提取码：HHTK"
+            },
+            {
+              "name": "Office2024（正式版）",
+              "url": "https://pan.wo.cn/s/1x0p9i94664",
+              "title": "提取码：QklR"
+            },
+            {
+              "name": "Office LTSC 2024",
+              "url": "https://pan.wo.cn/s/1d0W9X94666",
+              "title": "提取码：ZfUP"
+            },
+            {
+              "name": "Office 2021",
+              "url": "https://pan.wo.cn/s/1b0l9h94667",
+              "title": "提取码：mCRp"
+            },
+            {
+              "name": "Office 2019",
+              "url": "https://pan.wo.cn/s/1T0R9i94669",
+              "title": "提取码：dCnh"
+            },
+            {
+              "name": "Office 2016",
+              "url": "https://pan.wo.cn/s/1R0C9f94670",
+              "title": "提取码：SzFH"
+            },
+            {
+              "name": "Office 2013",
+              "url": "https://pan.wo.cn/s/1m0h9i94673",
+              "title": "提取码：OOzG"
+            },
+            {
+              "name": "Office 2010",
+              "url": "https://pan.wo.cn/s/1V0B9a94674",
+              "title": "提取码：MQEs"
+            },
+            {
+              "name": "Office 2007",
+              "url": "https://pan.wo.cn/s/1G0C9p94679",
+              "title": "提取码：0VDh"
+            },
+            {
+              "name": "Office 2003",
+              "url": "https://pan.wo.cn/s/1P0F9J94680",
+              "title": "提取码：rVpi"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub2": {
+      "title": "WPS",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "WPS2024（官方版）",
+              "url": "https://pan.wo.cn/s/1i0D9d94699",
+              "title": "提取码：RKJn"
+            },
+            {
+              "name": "WPS2023（官方版）",
+              "url": "https://pan.wo.cn/s/1b0r9C94700",
+              "title": "提取码：cItM"
+            },
+            {
+              "name": "WPS2021（官方版）",
+              "url": "https://pan.wo.cn/s/1T0u9L94702",
+              "title": "提取码：ESsE"
+            },
+            {
+              "name": "WPS2019（官方版）",
+              "url": "https://pan.wo.cn/s/1W0Z9v94704",
+              "title": "提取码：FVBD"
+            },
+            {
+              "name": "WPS2019（考试版）",
+              "url": "https://pan.wo.cn/s/1e0Y9F94705",
+              "title": "提取码：UZ1s"
+            },
+            {
+              "name": "WPS2016（官方版）",
+              "url": "https://pan.wo.cn/s/1s0t9q94706",
+              "title": "提取码：TtAU"
+            },
+            {
+              "name": "WPS2013（官方版）",
+              "url": "https://pan.wo.cn/s/1r0R9P94707",
+              "title": "提取码：ewYh"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub3": {
+      "title": "Project",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "Project2024",
+              "url": "https://pan.wo.cn/s/1F0q9I94838",
+              "title": "提取码：suIa"
+            },
+            {
+              "name": "Project2021",
+              "url": "https://pan.wo.cn/s/1s0Y9E94840",
+              "title": "提取码：ua9P"
+            },
+            {
+              "name": "Project2019",
+              "url": "https://pan.wo.cn/s/1r0P9p94841",
+              "title": "提取码：89LH"
+            },
+            {
+              "name": "Project2016",
+              "url": "https://pan.wo.cn/s/1G0l9v94843",
+              "title": "提取码：phfH"
+            },
+            {
+              "name": "Project2013",
+              "url": "https://pan.wo.cn/s/1U0T9d94844",
+              "title": "提取码：eKN8"
+            },
+            {
+              "name": "Project2010",
+              "url": "https://pan.wo.cn/s/1B0R9g94845",
+              "title": "提取码：1EDt"
+            },
+            {
+              "name": "Project2007",
+              "url": "https://pan.wo.cn/s/1i0E9K94848",
+              "title": "提取码：oVqZ"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub4": {
+      "title": "Visio",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "Visio2024",
+              "url": "https://pan.wo.cn/s/1c0H9h94850",
+              "title": "提取码：R7MY"
+            },
+            {
+              "name": "Visio2021",
+              "url": "https://pan.wo.cn/s/1Z0x9Z94852",
+              "title": "提取码：Y1n6"
+            },
+            {
+              "name": "Visio2019",
+              "url": "https://pan.wo.cn/s/1q0d9v94853",
+              "title": "提取码：SxJD"
+            },
+            {
+              "name": "Visio2016",
+              "url": "https://pan.wo.cn/s/1k0G9K94856",
+              "title": "提取码：XWka"
+            },
+            {
+              "name": "Visio2013",
+              "url": "https://pan.wo.cn/s/1h0Z9Z94857",
+              "title": "提取码：Bkkm"
+            },
+            {
+              "name": "Visio2010",
+              "url": "https://pan.wo.cn/s/1x0A9j94858",
+              "title": "提取码：fbWd"
+            },
+            {
+              "name": "Visio2007",
+              "url": "https://pan.wo.cn/s/1g0L9v94865",
+              "title": "提取码：kZ2k"
+            },
+            {
+              "name": "Visio2003",
+              "url": "https://pan.wo.cn/s/1y0P9D94870",
+              "title": "提取码：4jsQ"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub5": {
+      "title": "Xmind",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "Xmind2025",
+              "url": "https://pan.wo.cn/s/1D0x9C94872",
+              "title": "提取码：2wDr"
+            },
+            {
+              "name": "Xmind2024",
+              "url": "https://pan.wo.cn/s/1Z0k9G94874",
+              "title": "提取码：8DcH"
+            },
+            {
+              "name": "Xmind2023",
+              "url": "https://pan.wo.cn/s/1q0t9k94875",
+              "title": "提取码：WKUo"
+            },
+            {
+              "name": "Xmind2022",
+              "url": "https://pan.wo.cn/s/1r0R9P94878",
+              "title": "提取码：29JO"
+            },
+            {
+              "name": "Xmind ZEN2021",
+              "url": "https://pan.wo.cn/s/1J0X9K94887",
+              "title": "提取码：eYLG"
+            },
+            {
+              "name": "Xmind ZEN2020",
+              "url": "https://pan.wo.cn/s/1i0Q9C94893",
+              "title": "提取码：c8vm"
+            },
+            {
+              "name": "Xmind ZEN2019",
+              "url": "https://pan.wo.cn/s/1Y0A9e94900",
+              "title": "提取码：807C"
+            },
+            {
+              "name": "Xmind 8",
+              "url": "https://pan.wo.cn/s/1r0j9G94901",
+              "title": "提取码：CfKO"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub6": {
+      "title": "EdrawMax",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "EdrawMax 14.1",
+              "url": "https://pan.wo.cn/s/1v0i9J94903",
+              "title": "提取码：kJw0"
+            },
+            {
+              "name": "EdrawMax 13.5",
+              "url": "https://pan.wo.cn/s/1w0k9N94904",
+              "title": "提取码：UD5N"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub7": {
+      "title": "OfficeSuite",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "OfficeSuite 8.90",
+              "url": "https://pan.wo.cn/s/1y1z2L32333",
+              "title": "提取码：4G5F"
+            },
+            {
+              "name": "OfficeSuite 8.70",
+              "url": "https://pan.wo.cn/s/1m1g2h32337",
+              "title": "提取码：SAp4"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub8": {
+      "title": "Typora",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "Typora1.12.1",
+              "url": "https://pan.wo.cn/s/1t1i2i32338",
+              "title": "提取码：GUQl"
+            },
+            {
+              "name": "Typora1.11.6",
+              "url": "https://pan.wo.cn/s/1a1P2B32339",
+              "title": "提取码：hRFp"
+            },
+            {
+              "name": "Typora 1.10.8",
+              "url": "https://pan.wo.cn/s/1W1A2F32340",
+              "title": "提取码：BG7L"
+            },
+            {
+              "name": "Typora 1.9.5",
+              "url": "https://pan.wo.cn/s/1I1q2L32341",
+              "title": "提取码：Qioz"
+            },
+            {
+              "name": "Typora 1.9.4",
+              "url": "https://pan.wo.cn/s/1o1S2k32342",
+              "title": "提取码：hZEd"
+            },
+            {
+              "name": "Typora 1.9.3",
+              "url": "https://pan.wo.cn/s/1b1X2M32343",
+              "title": "提取码：28Nk"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub9": {
+      "title": "Draw.io",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "Draw.io",
+              "url": "#"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub10": {
+      "title": "SimpleMind",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "SimpleMind Pro",
+              "url": "#"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub11": {
+      "title": "Freeplane",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "Freeplane 1.12",
+              "url": "#"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub12": {
+      "title": "Sketchpad",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "Sketchpad 5.0.6",
+              "url": "#"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub13": {
+      "title": "手写模拟器",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "手写模拟器 2.2",
+              "url": "#"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub14": {
+      "title": "OCR文字识别",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "天若OCR文字识别4.48",
+              "url": "#"
+            },
+            {
+              "name": "Panda OCR2.1",
+              "url": "#"
+            },
+            {
+              "name": "离线 OCR",
+              "url": "#"
+            },
+            {
+              "name": "OCR工具集1.1",
+              "url": "#"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub15": {
+      "title": "Localsend",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "Localsend 1.16.1",
+              "url": "#"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub16": {
+      "title": "Escrcpy",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "Escrcpy",
+              "url": "#"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub17": {
+      "title": "VueScan",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "VueScan 9.8.43",
+              "url": "#"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub18": {
+      "title": "ToDoList",
+      "categories": [
+        {
+          "name": "主要分类",
+          "links": [
+            {
+              "name": "ToDoList 9.0.6",
+              "url": "#"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub19": {
+      "title": "Photoshop（PS+插件）",
+      "categories": [
+        {
+          "name": "PS 2025",
+          "links": [
+            {
+              "name": "PS2025v26.6(64bit)",
+              "url": "https://pan.wo.cn/s/1e0B7U51893",
+              "title": "提取码：dI5x"
+            },
+            {
+              "name": "PS2025v26.5(64bit)",
+              "url": "https://pan.wo.cn/s/1b0A7r51584",
+              "title": "提取码：PTeC"
+            },
+            {
+              "name": "PS2025v26.3(64bit)",
+              "url": "https://pan.wo.cn/s/1F0f7s51632",
+              "title": "提取码：2qej"
+            },
+            {
+              "name": "PS2025v26.2(64bit)",
+              "url": "https://pan.wo.cn/s/1E0S7I51640",
+              "title": "提取码：430K"
+            },
+            {
+              "name": "PS2025v26.1(64bit)",
+              "url": "https://pan.wo.cn/s/1s0b7h51653",
+              "title": "提取码：CfRs"
+            },
+            {
+              "name": "PS2025v26.0(64bit)",
+              "url": "https://pan.wo.cn/s/1L0c7o51654",
+              "title": "提取码：fJxs"
+            }
+          ]
+        },
+        {
+          "name": "PS 2024",
+          "links": [
+            {
+              "name": "PS2024 v25.12(64bit)",
+              "url": "https://pan.wo.cn/s/1h0G7O51656",
+              "title": "提取码：aD9X"
+            },
+            {
+              "name": "Ps2024v25.11(64bit)",
+              "url": "https://pan.wo.cn/s/1i0a7k51659",
+              "title": "提取码：YATD"
+            },
+            {
+              "name": "PS2024v25.9(64bit)",
+              "url": "https://pan.wo.cn/s/1F0F7y51679",
+              "title": "提取码：EmDM"
+            },
+            {
+              "name": "PS2024v25.7(64bit)",
+              "url": "https://pan.wo.cn/s/1Q0J7A51714",
+              "title": "提取码：romB"
+            },
+            {
+              "name": "PS2024v25.6(64bit)",
+              "url": "https://pan.wo.cn/s/1R0d7b51720",
+              "title": "提取码：9kmY"
+            },
+            {
+              "name": "PS2024(64bit)",
+              "url": "https://pan.wo.cn/s/1o0k7B51725",
+              "title": "提取码：ri7X"
+            }
+          ]
+        },
+        {
+          "name": "PS 2023",
+          "links": [
+            {
+              "name": "PS2023",
+              "url": "https://pan.wo.cn/s/1E0V7M51735",
+              "title": "提取码：YnU6"
+            }
+          ]
+        },
+        {
+          "name": "PS 2022",
+          "links": [
+            {
+              "name": "PS2022",
+              "url": "https://pan.wo.cn/s/1A0K7c51736",
+              "title": "提取码：5ldB"
+            }
+          ]
+        },
+        {
+          "name": "PS 2021",
+          "links": [
+            {
+              "name": "PS2021",
+              "url": "https://pan.wo.cn/s/1u0y7I51738",
+              "title": "提取码：4LGI"
+            }
+          ]
+        },
+        {
+          "name": "PS 2020",
+          "links": [
+            {
+              "name": "PS2020",
+              "url": "https://pan.wo.cn/s/1L0e7z51741",
+              "title": "提取码：l1si"
+            }
+          ]
+        },
+        {
+          "name": "PS 2019",
+          "links": [
+            {
+              "name": "PS2019",
+              "url": "https://pan.wo.cn/s/1V0V7x51744",
+              "title": "提取码：4yxs"
+            }
+          ]
+        },
+        {
+          "name": "PS 2018",
+          "links": [
+            {
+              "name": "PS2018",
+              "url": "https://pan.wo.cn/s/1C0I7q51746",
+              "title": "提取码：vBv3"
+            }
+          ]
+        },
+        {
+          "name": "PS 2017",
+          "links": [
+            {
+              "name": "PS2017",
+              "url": "https://pan.wo.cn/s/1u0d7e51750",
+              "title": "提取码：NlIt"
+            }
+          ]
+        },
+        {
+          "name": "PS 2015",
+          "links": [
+            {
+              "name": "PS2015",
+              "url": "https://pan.wo.cn/s/1L0j7b51751",
+              "title": "提取码：l9kN"
+            }
+          ]
+        },
+        {
+          "name": "PS CS6",
+          "links": [
+            {
+              "name": "PS CS6",
+              "url": "https://pan.wo.cn/s/1p0e7j51753",
+              "title": "提取码：6Wge"
+            }
+          ]
+        },
+        {
+          "name": "PS CS5",
+          "links": [
+            {
+              "name": "PS CS5",
+              "url": "https://pan.wo.cn/s/1u0k7H51756",
+              "title": "提取码：VpOY"
+            }
+          ]
+        },
+        {
+          "name": "PS CS2",
+          "links": [
+            {
+              "name": "PS CS2",
+              "url": "https://pan.wo.cn/s/1z1s4P64776",
+              "title": "提取码：PvWF"
+            }
+          ]
+        },
+        {
+          "name": "PS 7.0",
+          "links": [
+            {
+              "name": "PS 7.0",
+              "url": "https://pan.wo.cn/s/1R1c4K64775",
+              "title": "提取码：Lrpy"
+            }
+          ]
+        },
+        {
+          "name": "Photoshop Elements",
+          "links": [
+            {
+              "name": "Photoshop Elements 2025",
+              "url": "https://pan.wo.cn/s/1w0I9Q42726",
+              "title": "提取码：KNdl"
+            },
+            {
+              "name": "Photoshop Elements 2024",
+              "url": "https://pan.wo.cn/s/1r0k9H42738",
+              "title": "提取码：H6ve"
+            },
+            {
+              "name": "Photoshop Elements 2023",
+              "url": "https://pan.wo.cn/s/1d0Z9C42741",
+              "title": "提取码：GUhM"
+            },
+            {
+              "name": "Photoshop Elements 2022",
+              "url": "https://pan.wo.cn/s/1R0u9t42745",
+              "title": "提取码：aa5m"
+            },
+            {
+              "name": "Photoshop Elements 2021",
+              "url": "https://pan.wo.cn/s/1s0m9Q42747",
+              "title": "提取码：ICIF"
+            },
+            {
+              "name": "Photoshop Elements 2020",
+              "url": "https://pan.wo.cn/s/1s0K9c42748",
+              "title": "提取码：9Bqr"
+            }
+          ]
+        },
+        {
+          "name": "Photoshop 插件",
+          "links": [
+            {
+              "name": "BBTools Shadow",
+              "url": "https://pan.wo.cn/s/1m0k9p42753",
+              "title": "提取码：BEGR"
+            },
+            {
+              "name": "Portraiture",
+              "url": "https://pan.wo.cn/s/1w0k9T42756",
+              "title": "提取码：bRLM"
+            },
+            {
+              "name": "Retouch Pro",
+              "url": "https://pan.wo.cn/s/1i0R9Z42760",
+              "title": "提取码：ut9C"
+            },
+            {
+              "name": "TK Action",
+              "url": "https://pan.wo.cn/s/1x0H9i42775",
+              "title": "提取码：T75S"
+            },
+            {
+              "name": "Alpaca",
+              "url": "https://pan.wo.cn/s/1G0p9v42777",
+              "title": "提取码：3M29"
+            },
+            {
+              "name": "BBTools Shadow",
+              "url": "https://pan.wo.cn/s/1o0t9R42782",
+              "title": "提取码：szJl"
+            },
+            {
+              "name": "Beautify Panel",
+              "url": "https://pan.wo.cn/s/1Y0X9m42784",
+              "title": "提取码：89Xs"
+            },
+            {
+              "name": "Better Grids Layout Creation Kit",
+              "url": "https://pan.wo.cn/s/1H0p9c42789",
+              "title": "提取码：3pL3"
+            },
+            {
+              "name": "CameraRaw",
+              "url": "https://pan.wo.cn/s/1z0B9f42791",
+              "title": "提取码：4iqk"
+            },
+            {
+              "name": "Coolorus",
+              "url": "https://pan.wo.cn/s/1X0W9b42797",
+              "title": "提取码：PhDH"
+            },
+            {
+              "name": "DR5.0",
+              "url": "https://pan.wo.cn/s/1x0X9g42950",
+              "title": "提取码：IA7y"
+            },
+            {
+              "name": "DxO ViewPoint",
+              "url": "https://pan.wo.cn/s/1k0P9v43011",
+              "title": "提取码：lAcf"
+            },
+            {
+              "name": "FilmPack",
+              "url": "https://pan.wo.cn/s/1w0R9s43012",
+              "title": "提取码：QhAN"
+            },
+            {
+              "name": "Fluid MasK",
+              "url": "https://pan.wo.cn/s/1u0M9j43014",
+              "title": "提取码：VHx3"
+            },
+            {
+              "name": "FontShaper",
+              "url": "https://pan.wo.cn/s/1S0z9g43022",
+              "title": "提取码：X8pg"
+            },
+            {
+              "name": "Imagenomic Portraiture",
+              "url": "https://pan.wo.cn/s/1R0f9E43024",
+              "title": "提取码：3Zvt"
+            },
+            {
+              "name": "Knoll Light Factory 灯光工厂",
+              "url": "https://pan.wo.cn/s/1b0y9O43171",
+              "title": "提取码：qr4C"
+            },
+            {
+              "name": "Lazy Nezumi Pro",
+              "url": "https://pan.wo.cn/s/1P0x9c43172",
+              "title": "提取码：ccfF"
+            },
+            {
+              "name": "Lumi32",
+              "url": "https://pan.wo.cn/s/1W0i9g43185",
+              "title": "提取码：RWxb"
+            },
+            {
+              "name": "MUA Retouch Panel",
+              "url": "https://pan.wo.cn/s/1C0k9e43199",
+              "title": "提取码：Yvkr"
+            },
+            {
+              "name": "Motuion Clock",
+              "url": "https://pan.wo.cn/s/1E0V9M43200",
+              "title": "提取码：NXLZ"
+            },
+            {
+              "name": "Nik.Collection",
+              "url": "https://pan.wo.cn/s/1V0T9A43231",
+              "title": "提取码：rOnD"
+            },
+            {
+              "name": "Oniric",
+              "url": "https://pan.wo.cn/s/1E0U9f43253",
+              "title": "提取码：i6Ax"
+            },
+            {
+              "name": "Optics",
+              "url": "https://pan.wo.cn/s/1S0D9t43271",
+              "title": "提取码：fwDK"
+            },
+            {
+              "name": "PSD AI EPS缩略图补丁",
+              "url": "https://pan.wo.cn/s/1A0g9I43277",
+              "title": "提取码：2bL1"
+            },
+            {
+              "name": "PS样机生成",
+              "url": "https://pan.wo.cn/s/1q0k9P43278",
+              "title": "提取码：YtST"
+            },
+            {
+              "name": "PT Portrait Studio",
+              "url": "https://pan.wo.cn/s/1t0P9o43287",
+              "title": "提取码：R8GO"
+            },
+            {
+              "name": "PT Portrait Studio人像修图助手",
+              "url": "https://pan.wo.cn/s/1U0v9D43288",
+              "title": "提取码：10Y5"
+            },
+            {
+              "name": "PaperPanel",
+              "url": "https://pan.wo.cn/s/1l0c9R43290",
+              "title": "提取码：z2Lp"
+            },
+            {
+              "name": "Photographer ToolBox",
+              "url": "https://pan.wo.cn/s/1u0E9Y43292",
+              "title": "提取码：RCPz"
+            },
+            {
+              "name": "Portraiture（人像磨皮）",
+              "url": "https://pan.wo.cn/s/1K0w9b43294",
+              "title": "提取码：a5vb"
+            },
+            {
+              "name": "Ps图像锐化滤镜Perfectly Clear",
+              "url": "https://pan.wo.cn/s/1G0a9e43303",
+              "title": "提取码：uUoI"
+            },
+            {
+              "name": "Radiant Photo",
+              "url": "https://pan.wo.cn/s/1R0t9L43304",
+              "title": "提取码：y5mu"
+            },
+            {
+              "name": "Retouch4me",
+              "url": "https://pan.wo.cn/s/1T0l9b43309",
+              "title": "提取码：6AoJ"
+            },
+            {
+              "name": "SkinFiner",
+              "url": "https://pan.wo.cn/s/1Q0V9B43313",
+              "title": "提取码：EqN4"
+            },
+            {
+              "name": "Tiffen TDF",
+              "url": "https://pan.wo.cn/s/1H0l9M43316",
+              "title": "提取码：umD6"
+            },
+            {
+              "name": "Ultimate Retouch Panel",
+              "url": "https://pan.wo.cn/s/1e0N9l43331",
+              "title": "提取码：p2sN"
+            },
+            {
+              "name": "Vertus Fluid Mask",
+              "url": "https://pan.wo.cn/s/1U0B9Q43333",
+              "title": "提取码：TBw9"
+            },
+            {
+              "name": "fonTags 字体管理预览",
+              "url": "https://pan.wo.cn/s/1l0G9q43031",
+              "title": "提取码：gYGO"
+            },
+            {
+              "name": "shadowify",
+              "url": "https://pan.wo.cn/s/1z0t9r43335",
+              "title": "提取码：GpbU"
+            },
+            {
+              "name": "人像磨皮美白滤镜Imagenomic Portraiture",
+              "url": "https://pan.wo.cn/s/1m0V9B43339",
+              "title": "提取码：QqwM"
+            },
+            {
+              "name": "人像色彩校正滤镜PictoColor iCorrect Portrait",
+              "url": "https://pan.wo.cn/s/1i0u9P43340",
+              "title": "提取码：CB5v"
+            },
+            {
+              "name": "人像降噪润色滤镜Imagenomic Noiseware",
+              "url": "https://pan.wo.cn/s/1z0l9R43344",
+              "title": "提取码：PzAe"
+            },
+            {
+              "name": "信达max证件照大师",
+              "url": "https://pan.wo.cn/s/1Z0R9E43388",
+              "title": "提取码：9M2R"
+            },
+            {
+              "name": "免费可商用字体",
+              "url": "https://pan.wo.cn/s/1b0a9a43405",
+              "title": "提取码：KgY5"
+            },
+            {
+              "name": "全景软件矫形Hb Panorama Corrector",
+              "url": "https://pan.wo.cn/s/1h0U9D43410",
+              "title": "提取码：9B4q"
+            },
+            {
+              "name": "圆角增强编辑 Corner Editor",
+              "url": "https://pan.wo.cn/s/1U0g9s43443",
+              "title": "提取码：YK3g"
+            },
+            {
+              "name": "字体管理预览扩展插件fonTags",
+              "url": "https://pan.wo.cn/s/1g0P9m43445",
+              "title": "提取码：fQFz"
+            },
+            {
+              "name": "小清新日系PSD字体模板",
+              "url": "https://pan.wo.cn/s/1q0a9i43446",
+              "title": "提取码：crbu"
+            },
+            {
+              "name": "工笔画",
+              "url": "https://pan.wo.cn/s/1m0j9H44039",
+              "title": "提取码：SO5y"
+            },
+            {
+              "name": "常用修图动作",
+              "url": "https://pan.wo.cn/s/1a0f9G44044",
+              "title": "提取码：CpMf"
+            },
+            {
+              "name": "水波倒影插件Flaming Pear Flood",
+              "url": "https://pan.wo.cn/s/1q0k9w44045",
+              "title": "提取码：DpCw"
+            },
+            {
+              "name": "灯光工厂滤镜Knoll Light Factor",
+              "url": "https://pan.wo.cn/s/1x0C9a44106",
+              "title": "提取码：WotM"
+            },
+            {
+              "name": "矢量跟踪黑白画水墨艺术照片效果PS动作",
+              "url": "https://pan.wo.cn/s/1f0G9r44161",
+              "title": "提取码：QI91"
+            },
+            {
+              "name": "线之绘滤镜Redfield Fractalius",
+              "url": "https://pan.wo.cn/s/1d0O9a44190",
+              "title": "提取码：OJHI"
+            },
+            {
+              "name": "蓝宝石插件 Sapphire",
+              "url": "https://pan.wo.cn/s/1J0z9p44191",
+              "title": "提取码：aRGf"
+            },
+            {
+              "name": "证件照大师",
+              "url": "https://pan.wo.cn/s/1m0P9B44193",
+              "title": "提取码：c3eN"
+            },
+            {
+              "name": "贴图插件滤镜SuperBladePro",
+              "url": "https://pan.wo.cn/s/1b0m9W44194",
+              "title": "提取码：UpVP"
+            },
+            {
+              "name": "逼真的刺绣Realistic Embroidery",
+              "url": "https://pan.wo.cn/s/1F0v9J44196",
+              "title": "提取码：Ge4F"
+            },
+            {
+              "name": "高光消除滤镜ShineOff",
+              "url": "https://pan.wo.cn/s/1p0Y9Q44199",
+              "title": "提取码：NhiE"
+            },
+            {
+              "name": "黑作坊 暗黑物质 光斑纹理插件",
+              "url": "https://pan.wo.cn/s/1u0h9Q44200",
+              "title": "提取码：uWKY"
+            },
+            {
+              "name": "Delicious Retouch Plus(Dr)5.0",
+              "url": "https://pan.wo.cn/s/1D0F9s44204",
+              "title": "提取码：HHi0"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub20": {
+      "title": "Lightroom",
+      "categories": [
+        {
+          "name": "Lightroom2025",
+          "links": [
+            {
+              "name": "Lr2025v14.3(64bit)",
+              "url": "https://pan.wo.cn/s/1i0q9H82092",
+              "title": "提取码：HhXI"
+            },
+            {
+              "name": "Lr2025v14.2(64bit)",
+              "url": "https://pan.wo.cn/s/1g0I9V82098",
+              "title": "提取码：KSpO"
+            },
+            {
+              "name": "Lr2025v14.1(64bit)",
+              "url": "https://pan.wo.cn/s/1f0x9v82103",
+              "title": "提取码：ZXAI"
+            },
+            {
+              "name": "Lr2025v14.1(64bit)",
+              "url": "https://pan.wo.cn/s/1C0F9p82110",
+              "title": "提取码：PGBt"
+            }
+          ]
+        },
+        {
+          "name": "Lightroom2024",
+          "links": [
+            {
+              "name": "Lr2024v13.5(64bit)",
+              "url": "https://pan.wo.cn/s/1W0n9U82115",
+              "title": "提取码：F5AG"
+            },
+            {
+              "name": "Lr2024v13.4(64bit)",
+              "url": "https://pan.wo.cn/s/1W0l9O82121",
+              "title": "提取码：OA7q"
+            },
+            {
+              "name": "Lr2024v13.2(64bit)",
+              "url": "https://pan.wo.cn/s/1h0l9i82127",
+              "title": "提取码：kAS4"
+            },
+            {
+              "name": "Lr2024(64bit)",
+              "url": "https://pan.wo.cn/s/1d0P9i82129",
+              "title": "提取码：1EFu"
+            }
+          ]
+        },
+        {
+          "name": "Lightroom2023",
+          "links": [
+            {
+              "name": "Lr2023",
+              "url": "https://pan.wo.cn/s/1l0g9n82132",
+              "title": "提取码：uIoj"
+            }
+          ]
+        },
+        {
+          "name": "Lightroom2022",
+          "links": [
+            {
+              "name": "Lr2022",
+              "url": "https://pan.wo.cn/s/1Y0R9L82135",
+              "title": "提取码：Of7I"
+            }
+          ]
+        },
+        {
+          "name": "Lightroom2021",
+          "links": [
+            {
+              "name": "Lr2021",
+              "url": "https://pan.wo.cn/s/1p0E9C82138",
+              "title": "提取码：1xnk"
+            }
+          ]
+        },
+        {
+          "name": "Lightroom2020",
+          "links": [
+            {
+              "name": "Lr2020",
+              "url": "https://pan.wo.cn/s/1o0J9a82139",
+              "title": "提取码：eM9k"
+            }
+          ]
+        },
+        {
+          "name": "Lightroom2019",
+          "links": [
+            {
+              "name": "Lr2019",
+              "url": "https://pan.wo.cn/s/1O0c9C82142",
+              "title": "提取码：lcuL"
+            }
+          ]
+        },
+        {
+          "name": "Lightroom2018",
+          "links": [
+            {
+              "name": "Lr2018",
+              "url": "https://pan.wo.cn/s/1o0o9J82144",
+              "title": "提取码：d1o7"
+            }
+          ]
+        },
+        {
+          "name": "Lightroom CS6",
+          "links": [
+            {
+              "name": "Lr 6.4",
+              "url": "https://pan.wo.cn/s/1H0X9Z82160",
+              "title": "提取码：AOXS"
+            }
+          ]
+        },
+        {
+          "name": "Lightroom CS5",
+          "links": [
+            {
+              "name": "Lr 5.7",
+              "url": "https://pan.wo.cn/s/1s0b9Q94268",
+              "title": "提取码：sLVG"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub21": {
+      "title": "Illustrator",
+      "categories": [
+        {
+          "name": "Illustrator 2025",
+          "links": [
+            {
+              "name": "Ai2025v29.5(64bit)",
+              "url": "https://pan.wo.cn/s/1X0x9v94275",
+              "title": "提取码：DPub"
+            },
+            {
+              "name": "Ai2025v29.4(64bit)",
+              "url": "https://pan.wo.cn/s/1F0e9t94278",
+              "title": "提取码：dU3b"
+            },
+            {
+              "name": "Ai2025v29.3(64bit)",
+              "url": "https://pan.wo.cn/s/1v0Z9u94279",
+              "title": "提取码：oScS"
+            },
+            {
+              "name": "Ai2025v29.2(64bit)",
+              "url": "https://pan.wo.cn/s/1q0p9g94280",
+              "title": "提取码：Ci4y"
+            },
+            {
+              "name": "Ai2025v29.1(64bit)",
+              "url": "https://pan.wo.cn/s/1a0O9Q94283",
+              "title": "提取码：fHkF"
+            },
+            {
+              "name": "Ai2025v29.0(64bit)",
+              "url": "https://pan.wo.cn/s/1w0o9E94285",
+              "title": "提取码：CoHh"
+            }
+          ]
+        },
+        {
+          "name": "Illustrator 2024",
+          "links": [
+            {
+              "name": "Ai2024v28.6(64bit)",
+              "url": "https://pan.wo.cn/s/1y0N9O94288",
+              "title": "提取码：LfrR"
+            },
+            {
+              "name": "Ai2024v28.5(64bit)",
+              "url": "https://pan.wo.cn/s/1T0P9g94289",
+              "title": "提取码：vY4y"
+            },
+            {
+              "name": "Ai2024(64bit)",
+              "url": "https://pan.wo.cn/s/1h0B9n94290",
+              "title": "提取码：ZBrI"
+            }
+          ]
+        },
+        {
+          "name": "Illustrator 2023",
+          "links": [
+            {
+              "name": "Ai2023",
+              "url": "https://pan.wo.cn/s/1h0b9m94291",
+              "title": "提取码：Ij5k"
+            }
+          ]
+        },
+        {
+          "name": "Illustrator 2022",
+          "links": [
+            {
+              "name": "Ai2022",
+              "url": "https://pan.wo.cn/s/1T0k9s94292",
+              "title": "提取码：zoen"
+            }
+          ]
+        },
+        {
+          "name": "Illustrator 2021",
+          "links": [
+            {
+              "name": "Ai2021",
+              "url": "https://pan.wo.cn/s/1J0x9m94294",
+              "title": "提取码：vRWp"
+            }
+          ]
+        },
+        {
+          "name": "Illustrator 2020",
+          "links": [
+            {
+              "name": "Ai2020",
+              "url": "https://pan.wo.cn/s/1a0U9Q94297",
+              "title": "提取码：FNlD"
+            }
+          ]
+        },
+        {
+          "name": "Illustrator 2019",
+          "links": [
+            {
+              "name": "Ai2019",
+              "url": "https://pan.wo.cn/s/1Q0N9F94298",
+              "title": "提取码：QVln"
+            }
+          ]
+        },
+        {
+          "name": "Illustrator 2018",
+          "links": [
+            {
+              "name": "Ai2018",
+              "url": "https://pan.wo.cn/s/1L0t9b94300",
+              "title": "提取码：iArh"
+            }
+          ]
+        },
+        {
+          "name": "Illustrator 2017",
+          "links": [
+            {
+              "name": "Ai2017",
+              "url": "https://pan.wo.cn/s/1a0s9E94301",
+              "title": "提取码：wgNz"
+            }
+          ]
+        },
+        {
+          "name": "Illustrator 2015",
+          "links": [
+            {
+              "name": "Ai2015",
+              "url": "https://pan.wo.cn/s/1n0u9s94303",
+              "title": "提取码：O2Av"
+            }
+          ]
+        },
+        {
+          "name": "Illustrator CS6",
+          "links": [
+            {
+              "name": "Ai CS6",
+              "url": "https://pan.wo.cn/s/1b0E9m94304",
+              "title": "提取码：3uBc"
+            }
+          ]
+        },
+        {
+          "name": "Illustrator CS5",
+          "links": [
+            {
+              "name": "Ai CS5",
+              "url": "https://pan.wo.cn/s/1W0W9n94305",
+              "title": "提取码：lQsD"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub22": {
+      "title": "Nik Collection",
+      "categories": [
+        {
+          "name": "Nik Collection",
+          "links": [
+            {
+              "name": "Nik Collection6.12(64bit)",
+              "url": "https://pan.wo.cn/s/1P0l9p94552",
+              "title": "提取码：tDZr"
+            },
+            {
+              "name": "Nik Collection6.10.0(64bit)",
+              "url": "https://pan.wo.cn/s/1U0r9C94554",
+              "title": "提取码：CfE0"
+            },
+            {
+              "name": "Nik Collection6.6(64bit)",
+              "url": "https://pan.wo.cn/s/1l0o9T94558",
+              "title": "提取码：Vloc"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub23": {
+      "title": "InDesign（Id）",
+      "links": [
+        {
+          "name": "InDesign",
+          "url": "#"
+        }
+      ]
+    },
+    "c-section-sub24": {
+      "title": "InCopy（Ic）",
+      "categories": [
+        {
+          "name": "InCopy 2025",
+          "links": [
+            {
+              "name": "InCopy2025v20.2(64bit)",
+              "url": "https://pan.wo.cn/s/1d0H9B94309",
+              "title": "提取码：1rv5"
+            },
+            {
+              "name": "InCopy2025v20.1(64bit)",
+              "url": "https://pan.wo.cn/s/1M0u9t94310",
+              "title": "提取码：85Wv"
+            },
+            {
+              "name": "InCopy2025v20.0.1(64bit)",
+              "url": "https://pan.wo.cn/s/1h0a9s94312",
+              "title": "提取码：jEUU"
+            },
+            {
+              "name": "InCopy2025v20.0(64bit)",
+              "url": "https://pan.wo.cn/s/1b0I9G94313",
+              "title": "提取码：477M"
+            }
+          ]
+        },
+        {
+          "name": "InCopy 2024",
+          "links": [
+            {
+              "name": "InCopy 2024 v19.5(64bit)",
+              "url": "https://pan.wo.cn/s/1G0o9G94337",
+              "title": "提取码：FlZp"
+            },
+            {
+              "name": "InCopy2024(64bit)",
+              "url": "https://pan.wo.cn/s/1n0s9M94339",
+              "title": "提取码：UIld"
+            }
+          ]
+        },
+        {
+          "name": "InCopy 2023",
+          "links": [
+            {
+              "name": "InCopy 2023",
+              "url": "https://pan.wo.cn/s/1s0x9L94343",
+              "title": "提取码：K4rQ"
+            }
+          ]
+        },
+        {
+          "name": "InCopy 2022",
+          "links": [
+            {
+              "name": "InCopy 2022",
+              "url": "https://pan.wo.cn/s/1n0t9q94344",
+              "title": "提取码：nZgv"
+            }
+          ]
+        },
+        {
+          "name": "InCopy 2021",
+          "links": [
+            {
+              "name": "InCopy 2021",
+              "url": "https://pan.wo.cn/s/1g0A9K94350",
+              "title": "提取码：ggRq"
+            }
+          ]
+        },
+        {
+          "name": "InCopy 2020",
+          "links": [
+            {
+              "name": "InCopy 2020",
+              "url": "https://pan.wo.cn/s/1Y0s9y94351",
+              "title": "提取码：TTe5"
+            }
+          ]
+        },
+        {
+          "name": "InCopy 2019",
+          "links": [
+            {
+              "name": "InCopy 2019",
+              "url": "https://pan.wo.cn/s/1A0U9h94353",
+              "title": "提取码：mOQC"
+            }
+          ]
+        },
+        {
+          "name": "InCopy 2018",
+          "links": [
+            {
+              "name": "InCopy 2018",
+              "url": "https://pan.wo.cn/s/1e0F9N94361",
+              "title": "提取码：N8GX"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub25": {
+      "title": "ACDSee",
+      "categories": [
+        {
+          "name": "ACDSee 2025",
+          "links": [
+            {
+              "name": "ACDSee 2025",
+              "url": "https://pan.wo.cn/s/1b0Q9J94486",
+              "title": "提取码：4Tha"
+            }
+          ]
+        },
+        {
+          "name": "ACDSee 2024",
+          "links": [
+            {
+              "name": "ACDSee 2024",
+              "url": "https://pan.wo.cn/s/1a0R9i94492",
+              "title": "提取码：sYnw"
+            }
+          ]
+        },
+        {
+          "name": "ACDSee 2023",
+          "links": [
+            {
+              "name": "ACDSee 2023",
+              "url": "https://pan.wo.cn/s/1D0i9O94494",
+              "title": "提取码：k3ce"
+            }
+          ]
+        },
+        {
+          "name": "ACDSee 2022",
+          "links": [
+            {
+              "name": "ACDSee 2022",
+              "url": "https://pan.wo.cn/s/1w0H9c94495",
+              "title": "提取码：i8G1"
+            }
+          ]
+        },
+        {
+          "name": "ACDSee 2021",
+          "links": [
+            {
+              "name": "ACDSee 2021",
+              "url": "https://pan.wo.cn/s/1E0i9a94362",
+              "title": "提取码：cyOo"
+            }
+          ]
+        },
+        {
+          "name": "ACDSee 2020",
+          "links": [
+            {
+              "name": "ACDSee 2020",
+              "url": "https://pan.wo.cn/s/1X0k9D94499",
+              "title": "提取码：96vp"
+            }
+          ]
+        },
+        {
+          "name": "ACDSee 20",
+          "links": [
+            {
+              "name": "ACDSee 20",
+              "url": "https://pan.wo.cn/s/1v0w9Y94500",
+              "title": "提取码：yYvq"
+            }
+          ]
+        },
+        {
+          "name": "ACDSee 10",
+          "links": [
+            {
+              "name": "ACDSee 10",
+              "url": "https://pan.wo.cn/s/1y0U9q94512",
+              "title": "提取码：ugo7"
+            }
+          ]
+        },
+        {
+          "name": "ACDSee 9",
+          "links": [
+            {
+              "name": "ACDSee 9",
+              "url": "https://pan.wo.cn/s/1E0Z9G94517",
+              "title": "提取码：1G4P"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub26": {
+      "title": "光影魔术手",
+      "categories": [
+        {
+          "name": "光影魔术手",
+          "links": [
+            {
+              "name": "光影魔术手4.6.1",
+              "url": "https://pan.wo.cn/s/1D0b9G94524",
+              "title": "提取码：tZXN"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub27": {
+      "title": "QuarkXPress",
+      "categories": [
+        {
+          "name": "QuarkXPress",
+          "links": [
+            {
+              "name": "QuarkXPress 2025",
+              "url": "https://pan.wo.cn/s/1m0K9K94531",
+              "title": "提取码：fdUT"
+            },
+            {
+              "name": "QuarkXPress 2024",
+              "url": "https://pan.wo.cn/s/1u0N9t94532",
+              "title": "提取码：Lzw9"
+            },
+            {
+              "name": "QuarkXPress 2023",
+              "url": "https://pan.wo.cn/s/1I0K9Q94534",
+              "title": "提取码：FJVY"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub28": {
+      "title": "Clip Studio Paint",
+      "categories": [
+        {
+          "name": "Clip Studio Paint",
+          "links": [
+            {
+              "name": "Clip Studio Paint 3.1",
+              "url": "https://pan.wo.cn/s/1y0E9D94537",
+              "title": "提取码：23kW"
+            },
+            {
+              "name": "Clip Studio Paint 2.3.4",
+              "url": "https://pan.wo.cn/s/1P0L9H94538",
+              "title": "提取码：wOLD"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub29": {
+      "title": "Luminar Neo",
+      "categories": [
+        {
+          "name": "Luminar Neo",
+          "links": [
+            {
+              "name": "Luminar Neo 1.23.0",
+              "url": "https://pan.wo.cn/s/1C0M9U94541",
+              "title": "提取码：SyfT"
+            },
+            {
+              "name": "Luminar Neo 1.21.2",
+              "url": "https://pan.wo.cn/s/1D0i9T94545",
+              "title": "提取码：dcWi"
+            },
+            {
+              "name": "Luminar Neo 1.19.0",
+              "url": "https://pan.wo.cn/s/1c0A9r94547",
+              "title": "提取码：VONe"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub101": {
+      "title": "Premier（Pr）",
+      "categories": [
+        {
+          "name": "Pr 2025",
+          "links": [
+            {
+              "name": "Pr2025v25.3(64bit)",
+              "url": "https://pan.wo.cn/s/1L0L9M42626",
+              "title": "密码：KVnF"
+            },
+            {
+              "name": "Pr2025v25.2(64bit)",
+              "url": "https://pan.wo.cn/s/1Y0b9O42628",
+              "title": "密码：sbG8"
+            },
+            {
+              "name": "Pr2025v25.1(64bit)",
+              "url": "https://pan.wo.cn/s/1d0R9q42630",
+              "title": "密码：lsbR"
+            },
+            {
+              "name": "Pr2025v25.0(64bit)",
+              "url": "https://pan.wo.cn/s/1r0T9a42633",
+              "title": "密码：EyUK"
+            }
+          ]
+        },
+        {
+          "name": "Pr 2024",
+          "links": [
+            {
+              "name": "Pr2024v24.5(64bit)",
+              "url": "https://pan.wo.cn/s/1q0a9N42648",
+              "title": "密码：3dEb"
+            },
+            {
+              "name": "Pr2024v24.3(64bit)",
+              "url": "https://pan.wo.cn/s/1O0f9q42649",
+              "title": "密码：eeW1"
+            },
+            {
+              "name": "Pr2024(64bit)",
+              "url": "https://pan.wo.cn/s/1W0W9k42651",
+              "title": "密码：mJeZ"
+            }
+          ]
+        },
+        {
+          "name": "Pr 2023",
+          "links": [
+            {
+              "name": "Pr2023(64bit)",
+              "url": "https://pan.wo.cn/s/1W0X9o42690",
+              "title": "密码：qkCo"
+            }
+          ]
+        },
+        {
+          "name": "Pr 2022",
+          "links": [
+            {
+              "name": "Pr2022(64bit)",
+              "url": "https://pan.wo.cn/s/1T0I9L42691",
+              "title": "密码：AtTU"
+            }
+          ]
+        },
+        {
+          "name": "Pr 2021",
+          "links": [
+            {
+              "name": "Pr2021(64bit)",
+              "url": "https://pan.wo.cn/s/1K0h9M42692",
+              "title": "密码：UGAU"
+            }
+          ]
+        },
+        {
+          "name": "Pr 2020",
+          "links": [
+            {
+              "name": "Pr2020(64bit)",
+              "url": "https://pan.wo.cn/s/1b0F9j42693",
+              "title": "密码：yLYM"
+            }
+          ]
+        },
+        {
+          "name": "Pr 2019",
+          "links": [
+            {
+              "name": "Pr2019(64bit)",
+              "url": "https://pan.wo.cn/s/1U0u9E42695",
+              "title": "密码：qDbI"
+            }
+          ]
+        },
+        {
+          "name": "Pr 2018",
+          "links": [
+            {
+              "name": "Pr2018(64bit)",
+              "url": "https://pan.wo.cn/s/1U0R9v42697",
+              "title": "密码：I8xv"
+            }
+          ]
+        },
+        {
+          "name": "Pr 2017",
+          "links": [
+            {
+              "name": "Pr2017(64bit)",
+              "url": "https://pan.wo.cn/s/1u0w9c42699",
+              "title": "密码：Yanw"
+            }
+          ]
+        },
+        {
+          "name": "Pr 2015",
+          "links": [
+            {
+              "name": "Pr2015(64bit)",
+              "url": "https://pan.wo.cn/s/1A0x9X42713",
+              "title": "密码：98Mz"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub104": {
+      "title": "After Effects（AE）",
+      "categories": [
+        {
+          "name": "AE 2025",
+          "links": [
+            {
+              "name": "Ae2025v25.4(64bit)",
+              "url": "https://pan.wo.cn/s/1j0y7C52194",
+              "title": "提取码：VBqB"
+            },
+            {
+              "name": "Ae2025v25.3(64bit)",
+              "url": "https://pan.wo.cn/s/1P0D7L52195",
+              "title": "提取码：nSAL"
+            },
+            {
+              "name": "Ae2025v25.2(64bit)",
+              "url": "https://pan.wo.cn/s/1z0C7n52200",
+              "title": "提取码：9z27"
+            },
+            {
+              "name": "Ae2025v25.1(64bit)",
+              "url": "https://pan.wo.cn/s/1Z0r7J52204",
+              "title": "提取码：RXdW"
+            },
+            {
+              "name": "Ae2025v25.0.1(64bit)",
+              "url": "https://pan.wo.cn/s/1w0Z7C52205",
+              "title": "提取码：gfl6"
+            },
+            {
+              "name": "Ae2025v25.0(64bit)",
+              "url": "https://pan.wo.cn/s/1V0n7F52206",
+              "title": "提取码：pCZ9"
+            }
+          ]
+        },
+        {
+          "name": "AE 2024",
+          "links": [
+            {
+              "name": "Ae2024v24.6(64bit)",
+              "url": "https://pan.wo.cn/s/1w0l7u52222",
+              "title": "提取码：6DLk"
+            },
+            {
+              "name": "Ae2024v24.5(64bit)",
+              "url": "https://pan.wo.cn/s/1B0u7y52224",
+              "title": "提取码：o2bg"
+            },
+            {
+              "name": "Ae2024v24.4(64bit)",
+              "url": "https://pan.wo.cn/s/1E0V7U52270",
+              "title": "提取码：HUZi"
+            },
+            {
+              "name": "Ae2024(64bit)",
+              "url": "https://pan.wo.cn/s/1D0P7J52272",
+              "title": "提取码：87DF"
+            }
+          ]
+        },
+        {
+          "name": "AE 2023",
+          "links": [
+            {
+              "name": "AE2023(64bit)",
+              "url": "https://pan.wo.cn/s/1W0H7K52288",
+              "title": "提取码：EN6T"
+            }
+          ]
+        },
+        {
+          "name": "AE 2022",
+          "links": [
+            {
+              "name": "AE2022(64bit)",
+              "url": "https://pan.wo.cn/s/1F0n7a52290",
+              "title": "提取码：TFnt"
+            }
+          ]
+        },
+        {
+          "name": "AE 2021",
+          "links": [
+            {
+              "name": "AE2021(64bit)",
+              "url": "https://pan.wo.cn/s/1q0M7l52294",
+              "title": "提取码：PCMJ"
+            }
+          ]
+        },
+        {
+          "name": "AE 2020",
+          "links": [
+            {
+              "name": "AE2020(64bit)",
+              "url": "https://pan.wo.cn/s/1x0h7q52296",
+              "title": "提取码：DjyQ"
+            }
+          ]
+        },
+        {
+          "name": "AE 2019",
+          "links": [
+            {
+              "name": "AE2019(64bit)",
+              "url": "https://pan.wo.cn/s/1S0G7y52299",
+              "title": "提取码：akwf"
+            }
+          ]
+        },
+        {
+          "name": "AE 2018",
+          "links": [
+            {
+              "name": "AE2018(64bit)",
+              "url": "https://pan.wo.cn/s/1R0o7n52300",
+              "title": "提取码：bpoj"
+            }
+          ]
+        },
+        {
+          "name": "AE 2017",
+          "links": [
+            {
+              "name": "AE2017(64bit)",
+              "url": "https://pan.wo.cn/s/1V0K7i52303",
+              "title": "提取码：hpOi"
+            }
+          ]
+        },
+        {
+          "name": "AE 2015",
+          "links": [
+            {
+              "name": "AE2015(64bit)",
+              "url": "https://pan.wo.cn/s/1U0h7U52305",
+              "title": "提取码：DS5d"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub401": {
+      "title": "CAD",
+      "categories": [
+        {
+          "name": "CAD",
+          "links": [
+            {
+              "name": "CAD 2026",
+              "url": "https://pan.wo.cn/s/1B1z2f32345",
+              "title": "提取码：symB"
+            },
+            {
+              "name": "CAD 2025",
+              "url": "https://pan.wo.cn/s/1t1y2t32346",
+              "title": "提取码：ZWXP"
+            },
+            {
+              "name": "CAD 2024",
+              "url": "https://pan.wo.cn/s/1I1v2R32485",
+              "title": "提取码：8mlr"
+            },
+            {
+              "name": "CAD 2023",
+              "url": "https://pan.wo.cn/s/1A1m2z32486",
+              "title": "提取码：HPvu"
+            },
+            {
+              "name": "CAD 2022",
+              "url": "https://pan.wo.cn/s/1Q1g2U32487",
+              "title": "提取码：d5Di"
+            },
+            {
+              "name": "CAD 2021",
+              "url": "https://pan.wo.cn/s/1d1B2U32489",
+              "title": "提取码：yVfb"
+            },
+            {
+              "name": "CAD 2020",
+              "url": "https://pan.wo.cn/s/1L1A2f32490",
+              "title": "提取码：UkOj"
+            },
+            {
+              "name": "CAD 2019",
+              "url": "https://pan.wo.cn/s/1s1G2k32491",
+              "title": "提取码：5WXI"
+            },
+            {
+              "name": "CAD 2018",
+              "url": "https://pan.wo.cn/s/1W1t2X32492",
+              "title": "提取码：JQmK"
+            },
+            {
+              "name": "CAD 2017",
+              "url": "https://pan.wo.cn/s/1H1l2r32493",
+              "title": "提取码：aYK6"
+            },
+            {
+              "name": "CAD 2016",
+              "url": "https://pan.wo.cn/s/1K1n2x32494",
+              "title": "提取码：pvls"
+            },
+            {
+              "name": "CAD 2015",
+              "url": "https://pan.wo.cn/s/1t1n2z32495",
+              "title": "提取码：DQbo"
+            },
+            {
+              "name": "CAD 2014",
+              "url": "https://pan.wo.cn/s/1E1A2w32496",
+              "title": "提取码：KVQW"
+            },
+            {
+              "name": "CAD 2013",
+              "url": "https://pan.wo.cn/s/1l1t2e32497",
+              "title": "提取码：qQGd"
+            },
+            {
+              "name": "CAD 2012",
+              "url": "https://pan.wo.cn/s/1H1e2n32498",
+              "title": "提取码：WQOu"
+            },
+            {
+              "name": "CAD 2011",
+              "url": "https://pan.wo.cn/s/1d1I2x32499",
+              "title": "提取码：MS40"
+            },
+            {
+              "name": "CAD 2010",
+              "url": "https://pan.wo.cn/s/1v1m2o32500",
+              "title": "提取码：nzBs"
+            },
+            {
+              "name": "CAD 2009",
+              "url": "https://pan.wo.cn/s/1e1Y2R32501",
+              "title": "提取码：npdx"
+            },
+            {
+              "name": "CAD 2008",
+              "url": "https://pan.wo.cn/s/1T1P2U32502",
+              "title": "提取码：znWZ"
+            },
+            {
+              "name": "CAD 2007",
+              "url": "https://pan.wo.cn/s/1B1i2V32503",
+              "title": "提取码：Sk6s"
+            },
+            {
+              "name": "CAD 2006",
+              "url": "https://pan.wo.cn/s/1F1K2Z32504",
+              "title": "提取码：LaSa"
+            },
+            {
+              "name": "CAD 2005",
+              "url": "https://pan.wo.cn/s/1N1T2P32506",
+              "title": "提取码：yqUS"
+            },
+            {
+              "name": "CAD 2004",
+              "url": "https://pan.wo.cn/s/1z1k2k32507",
+              "title": "提取码：Se4X"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub402": {
+      "title": "CAD精简版",
+      "categories": [
+        {
+          "name": "CAD精简版",
+          "links": [
+            {
+              "name": "CAD 2026精简版",
+              "url": "https://pan.wo.cn/s/1T1X2H33517",
+              "title": "提取码：FuAL"
+            },
+            {
+              "name": "CAD 2025精简版",
+              "url": "https://pan.wo.cn/s/1M1M2F33518",
+              "title": "提取码：YPVv"
+            },
+            {
+              "name": "CAD 2024精简版",
+              "url": "https://pan.wo.cn/s/1G1h2d33519",
+              "title": "提取码：6Pe4"
+            },
+            {
+              "name": "CAD 2023精简版",
+              "url": "https://pan.wo.cn/s/1Y1W2v33520",
+              "title": "提取码：QgSr"
+            },
+            {
+              "name": "CAD 2022精简版",
+              "url": "https://pan.wo.cn/s/1T1H2i33521",
+              "title": "提取码：kEFP"
+            },
+            {
+              "name": "CAD 2021精简版",
+              "url": "https://pan.wo.cn/s/1k1G2n33522",
+              "title": "提取码：auJA"
+            },
+            {
+              "name": "CAD 2020精简版",
+              "url": "https://pan.wo.cn/s/1F1E2R33523",
+              "title": "提取码：Pv2i"
+            },
+            {
+              "name": "CAD 2019精简版",
+              "url": "https://pan.wo.cn/s/1B1H2H33525",
+              "title": "提取码：iFuV"
+            },
+            {
+              "name": "CAD 2018精简版",
+              "url": "https://pan.wo.cn/s/1g1z2a33526",
+              "title": "提取码：f4xK"
+            },
+            {
+              "name": "CAD 2016精简版",
+              "url": "https://pan.wo.cn/s/1o1k2H33527",
+              "title": "提取码：ETyC"
+            },
+            {
+              "name": "CAD 2014精简版",
+              "url": "https://pan.wo.cn/s/1Q1D2B33528",
+              "title": "提取码：6W6U"
+            },
+            {
+              "name": "CAD 2010精简版",
+              "url": "https://pan.wo.cn/s/1F1n2T33530",
+              "title": "提取码：S7cr"
+            },
+            {
+              "name": "CAD 2007精简版",
+              "url": "https://pan.wo.cn/s/1i1y2Q33531",
+              "title": "提取码：7gdJ"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub403": {
+      "title": "CAD机械版",
+      "categories": [
+        {
+          "name": "CAD机械版",
+          "links": [
+            {
+              "name": "CAD 2026机械版",
+              "url": "https://pan.wo.cn/s/1O1r2d33558",
+              "title": "提取码：0eHT"
+            },
+            {
+              "name": "CAD 2025机械版",
+              "url": "https://pan.wo.cn/s/1S1u2s33559",
+              "title": "提取码：V7kY"
+            },
+            {
+              "name": "CAD 2024机械版",
+              "url": "https://pan.wo.cn/s/1s1l2Z33560",
+              "title": "提取码：zOW4"
+            },
+            {
+              "name": "CAD 2023机械版",
+              "url": "https://pan.wo.cn/s/1l1w2F33562",
+              "title": "提取码：VpqY"
+            },
+            {
+              "name": "CAD 2022机械版",
+              "url": "https://pan.wo.cn/s/1n1W2m33563",
+              "title": "提取码：hulZ"
+            },
+            {
+              "name": "CAD 2021机械版",
+              "url": "https://pan.wo.cn/s/1F1o2Z33564",
+              "title": "提取码：To1d"
+            },
+            {
+              "name": "CAD 2020机械版",
+              "url": "https://pan.wo.cn/s/1e1x2b33565",
+              "title": "提取码：cIlC"
+            },
+            {
+              "name": "CAD 2019机械版",
+              "url": "https://pan.wo.cn/s/1D1G2Q33566",
+              "title": "提取码：Ozf1"
+            },
+            {
+              "name": "CAD 2018机械版",
+              "url": "https://pan.wo.cn/s/1n1O2z33568",
+              "title": "提取码：0JVX"
+            },
+            {
+              "name": "CAD 2016机械版",
+              "url": "https://pan.wo.cn/s/1a1E2i33569",
+              "title": "提取码：aW18"
+            },
+            {
+              "name": "CAD 2015机械版",
+              "url": "https://pan.wo.cn/s/1B1m2Y33570",
+              "title": "提取码：8eH0"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub404": {
+      "title": "CAD建筑版",
+      "categories": [
+        {
+          "name": "CAD建筑版",
+          "links": [
+            {
+              "name": "CAD 2026建筑版",
+              "url": "https://pan.wo.cn/s/1A1l2F33578",
+              "title": "提取码：WkyE"
+            },
+            {
+              "name": "CAD 2025建筑版",
+              "url": "https://pan.wo.cn/s/1D1Q2L33579",
+              "title": "提取码：UjtN"
+            },
+            {
+              "name": "CAD 2024建筑版",
+              "url": "https://pan.wo.cn/s/1V1a2g33581",
+              "title": "提取码：j5FT"
+            },
+            {
+              "name": "CAD 2023建筑版",
+              "url": "https://pan.wo.cn/s/1w1L2Y33583",
+              "title": "提取码：LIs5"
+            },
+            {
+              "name": "CAD 2022建筑版",
+              "url": "https://pan.wo.cn/s/1y1a2A33584",
+              "title": "提取码：wBJm"
+            },
+            {
+              "name": "CAD 2021建筑版",
+              "url": "https://pan.wo.cn/s/1Q1J2O33585",
+              "title": "提取码：pZpg"
+            },
+            {
+              "name": "CAD 2020建筑版",
+              "url": "https://pan.wo.cn/s/1Q1A2W33586",
+              "title": "提取码：cV5j"
+            },
+            {
+              "name": "CAD 2018建筑版",
+              "url": "https://pan.wo.cn/s/1C1J2i33587",
+              "title": "提取码：Nrvq"
+            },
+            {
+              "name": "CAD 2016建筑版",
+              "url": "https://pan.wo.cn/s/1b1s2M33588",
+              "title": "提取码：wMwA"
+            },
+            {
+              "name": "CAD 2014建筑版",
+              "url": "https://pan.wo.cn/s/1q1B2J33589",
+              "title": "提取码：ZR8J"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub405": {
+      "title": "CAD电气版",
+      "categories": [
+        {
+          "name": "CAD电气版",
+          "links": [
+            {
+              "name": "CAD 2026电气版",
+              "url": "https://pan.wo.cn/s/1e1A2n33593",
+              "title": "提取码：ssii"
+            },
+            {
+              "name": "CAD 2025电气版",
+              "url": "https://pan.wo.cn/s/1V1P2P33595",
+              "title": "提取码：nAuf"
+            },
+            {
+              "name": "CAD 2024电气版",
+              "url": "https://pan.wo.cn/s/1a1T2Z33596",
+              "title": "提取码：oxiD"
+            },
+            {
+              "name": "CAD 2023电气版",
+              "url": "https://pan.wo.cn/s/1g1p2C33597",
+              "title": "提取码：LcKT"
+            },
+            {
+              "name": "CAD 2022电气版",
+              "url": "https://pan.wo.cn/s/1U1G2Y33600",
+              "title": "提取码：drTn"
+            },
+            {
+              "name": "CAD 2021电气版",
+              "url": "https://pan.wo.cn/s/1R1Z2w33601",
+              "title": "提取码：ZbeV"
+            },
+            {
+              "name": "CAD 2020电气版",
+              "url": "https://pan.wo.cn/s/1i1w2u33602",
+              "title": "提取码：XPro"
+            },
+            {
+              "name": "CAD 2019电气版",
+              "url": "https://pan.wo.cn/s/1X1V2l33603",
+              "title": "提取码：hmbX"
+            },
+            {
+              "name": "CAD 2018电气版",
+              "url": "https://pan.wo.cn/s/1j1v2R33604",
+              "title": "提取码：Dwxg"
+            },
+            {
+              "name": "CAD 2016电气版",
+              "url": "https://pan.wo.cn/s/1N1I2P33605",
+              "title": "提取码：u6Tm"
+            },
+            {
+              "name": "CAD 2015电气版",
+              "url": "https://pan.wo.cn/s/1K1C2v33606",
+              "title": "提取码：I4lp"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub406": {
+      "title": "CAD MEP",
+      "categories": [
+        {
+          "name": "CAD MEP",
+          "links": [
+            {
+              "name": "CAD MEP 2026",
+              "url": "https://pan.wo.cn/s/1c1B2m33613",
+              "title": "提取码：WOi2"
+            },
+            {
+              "name": "CAD MEP 2025",
+              "url": "https://pan.wo.cn/s/1y1D2h33615",
+              "title": "提取码：qQsJ"
+            },
+            {
+              "name": "CAD MEP 2024",
+              "url": "https://pan.wo.cn/s/1j1G2Z33616",
+              "title": "提取码：fFoU"
+            },
+            {
+              "name": "CAD MEP 2023",
+              "url": "https://pan.wo.cn/s/1K1C2C33617",
+              "title": "提取码：gKrH"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub407": {
+      "title": "CAD Plant 3D",
+      "categories": [
+        {
+          "name": "CAD Plant 3D",
+          "links": [
+            {
+              "name": "CAD Plant 3D 2026",
+              "url": "https://pan.wo.cn/s/1f1n2F33618",
+              "title": "提取码：rrJe"
+            },
+            {
+              "name": "CAD Plant 3D 2025",
+              "url": "https://pan.wo.cn/s/1U1l2I33619",
+              "title": "提取码：RVpf"
+            },
+            {
+              "name": "CAD Plant 3D 2024",
+              "url": "https://pan.wo.cn/s/1t1D2H33621",
+              "title": "提取码：Tg9e"
+            },
+            {
+              "name": "CAD Plant 3D 2023",
+              "url": "https://pan.wo.cn/s/1Z1o2H33622",
+              "title": "提取码：kW3c"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub408": {
+      "title": "CAD Map 3D",
+      "categories": [
+        {
+          "name": "CAD Map 3D",
+          "links": [
+            {
+              "name": "CAD Map 3D 2026",
+              "url": "https://pan.wo.cn/s/1x1d2T33623",
+              "title": "提取码：xM7y"
+            },
+            {
+              "name": "CAD Map 3D 2025",
+              "url": "https://pan.wo.cn/s/1G1h2e33624",
+              "title": "提取码：HC6G"
+            },
+            {
+              "name": "CAD Map 3D 2024",
+              "url": "https://pan.wo.cn/s/1G1G2k33625",
+              "title": "提取码：Ef9W"
+            },
+            {
+              "name": "CAD Map 3D 2023",
+              "url": "https://pan.wo.cn/s/1n1L2O33627",
+              "title": "提取码：9wrE"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub409": {
+      "title": "中望CAD",
+      "categories": [
+        {
+          "name": "中望CAD",
+          "links": [
+            {
+              "name": "中望CAD 2026",
+              "url": "https://pan.wo.cn/s/1D1B2u33629",
+              "title": "提取码：09JN"
+            },
+            {
+              "name": "中望CAD 2025",
+              "url": "https://pan.wo.cn/s/1n1y2K33630",
+              "title": "提取码：TU3F"
+            },
+            {
+              "name": "中望CAD 2024",
+              "url": "https://pan.wo.cn/s/1G1n2P33631",
+              "title": "提取码：Pyjt"
+            },
+            {
+              "name": "中望CAD 2023",
+              "url": "https://pan.wo.cn/s/1q1C2G33632",
+              "title": "提取码：eZSY"
+            },
+            {
+              "name": "中望CAD 2021",
+              "url": "https://pan.wo.cn/s/1R1w2R33633",
+              "title": "提取码：4T5i"
+            },
+            {
+              "name": "中望CAD 2020",
+              "url": "https://pan.wo.cn/s/1T1A2X33634",
+              "title": "提取码：tgPy"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub201": {
+      "title": "AU软件",
+      "categories": [
+        {
+          "name": "AU",
+          "links": [
+            {
+              "name": "AU 2025",
+              "url": "https://pan.wo.cn/s/1a1k2B33638",
+              "title": "提取码：5YR6"
+            },
+            {
+              "name": "AU 2024",
+              "url": "https://pan.wo.cn/s/1G1m2u33639",
+              "title": "提取码：HWcM"
+            },
+            {
+              "name": "AU 2023",
+              "url": "https://pan.wo.cn/s/1b1I2N33640",
+              "title": "提取码：qdjO"
+            },
+            {
+              "name": "AU 2022",
+              "url": "https://pan.wo.cn/s/1v1Z2C33641",
+              "title": "提取码：sCbm"
+            },
+            {
+              "name": "AU 2021",
+              "url": "https://pan.wo.cn/s/1f1f2w33642",
+              "title": "提取码：01yz"
+            },
+            {
+              "name": "AU 2020",
+              "url": "https://pan.wo.cn/s/1n1y2y33643",
+              "title": "提取码：1y7M"
+            },
+            {
+              "name": "AU 2019",
+              "url": "https://pan.wo.cn/s/1V1L2E33644",
+              "title": "提取码：MvO3"
+            },
+            {
+              "name": "AU 2018",
+              "url": "https://pan.wo.cn/s/1E1U2Q33645",
+              "title": "提取码：qzhX"
+            },
+            {
+              "name": "AU 2017",
+              "url": "https://pan.wo.cn/s/1C1k2W33646",
+              "title": "提取码：9m3O"
+            },
+            {
+              "name": "AU 2015",
+              "url": "https://pan.wo.cn/s/1e1r2J33647",
+              "title": "提取码：xbcf"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub601": {
+      "title": "Adobe Acrobat",
+      "categories": [
+        {
+          "name": "Adobe Acrobat 2025",
+          "links": [
+            {
+              "name": "Acrobat 2025稳定版",
+              "url": "https://pan.wo.cn/s/1f1I4P27907",
+              "title": "提取码：Rsrc"
+            },
+            {
+              "name": "Acrobat 2025直装版",
+              "url": "https://pan.wo.cn/s/1R1w4G27909",
+              "title": "提取码：1CPY"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Acrobat 2024",
+          "links": [
+            {
+              "name": "Acrobat 2024",
+              "url": "https://pan.wo.cn/s/1L1D4s27915",
+              "title": "提取码：IcQD"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Acrobat 2023",
+          "links": [
+            {
+              "name": "Acrobat 2023",
+              "url": "https://pan.wo.cn/s/1C1K4I27916",
+              "title": "提取码：JI7e"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Acrobat 2022",
+          "links": [
+            {
+              "name": "Acrobat 2022",
+              "url": "https://pan.wo.cn/s/1b1B4y27925",
+              "title": "提取码：Lals"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Acrobat 2021",
+          "links": [
+            {
+              "name": "Acrobat 2021",
+              "url": "https://pan.wo.cn/s/1S1y4j27926",
+              "title": "提取码：l3xg"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Acrobat 2020",
+          "links": [
+            {
+              "name": "Acrobat 2020",
+              "url": "https://pan.wo.cn/s/1w1G4n27927",
+              "title": "提取码：prOy"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Acrobat 2019",
+          "links": [
+            {
+              "name": "Acrobat 2019",
+              "url": "https://pan.wo.cn/s/1Q1A4L27929",
+              "title": "提取码：xXkn"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Acrobat XI Pro",
+          "links": [
+            {
+              "name": "Acrobat XI Pro",
+              "url": "https://pan.wo.cn/s/1I1k4U27930",
+              "title": "提取码：p2D2"
+            }
+          ]
+        },
+        {
+          "name": "Adobe Acrobat 9 Pro",
+          "links": [
+            {
+              "name": "Acrobat 9 Pro",
+              "url": "https://pan.wo.cn/s/1Y1m4U27931",
+              "title": "提取码：JwGE"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub602": {
+      "title": "PDFgear",
+      "categories": [
+        {
+          "name": "Adobe Acrobat 2025",
+          "links": [
+            {
+              "name": "PDFgear2.1.6",
+              "url": "https://pan.wo.cn/s/1K1b4B27943",
+              "title": "提取码：KRmK"
+            },
+            {
+              "name": "PDFgear2.1.5",
+              "url": "https://pan.wo.cn/s/1R1W4t27944",
+              "title": "提取码：2iiD"
+            },
+            {
+              "name": "PDFgear2.1.12",
+              "url": "https://pan.wo.cn/s/1z1R4o27945",
+              "title": "提取码：dn8K"
+            },
+            {
+              "name": "PDFgear2.1.11",
+              "url": "https://pan.wo.cn/s/1n1e4u27947",
+              "title": "提取码：qbsV"
+            }
+          ]
+        }
+      ]
+    },
+    "c-section-sub603": {
+      "title": "UPDF",
+      "links": [
+        {
+          "name": "UPDF",
+          "url": "https://pan.wo.cn/s/1q1h4B27948",
+          "title": "提取码：PwcH"
+        }
+      ]
+    },
+    "c-section-sub604": {
+      "title": "其他PDF软件",
+      "links": [
+        {
+          "name": "Master PDF Editor",
+          "url": "https://pan.wo.cn/s/1K1C4N27949",
+          "title": "提取码：nxli"
+        },
+        {
+          "name": "PDF Candy Desktop",
+          "url": "https://pan.wo.cn/s/1J1n4Z27950",
+          "title": "提取码：SqXD"
+        },
+        {
+          "name": "PDF Shaper",
+          "url": "https://pan.wo.cn/s/1d1X4J27951",
+          "title": "提取码：Isym"
+        },
+        {
+          "name": "PDF-XChange",
+          "url": "https://pan.wo.cn/s/1D1A4H27955",
+          "title": "提取码：tMtk"
+        },
+        {
+          "name": "PDF24",
+          "url": "https://pan.wo.cn/s/1l1t4m27956",
+          "title": "提取码：v0d8"
+        },
+        {
+          "name": "PDFelement",
+          "url": "https://pan.wo.cn/s/1z1f4c27958",
+          "title": "提取码：BeyU"
+        },
+        {
+          "name": "Solid Converter 10",
+          "url": "https://pan.wo.cn/s/1a1C4W27959",
+          "title": "提取码：vEtY"
+        },
+        {
+          "name": "Solid Converter 9",
+          "url": "https://pan.wo.cn/s/1K1j4L27960",
+          "title": "提取码：w4Bt"
+        }
+      ]
+    }
+  }
+}

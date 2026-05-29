@@ -1,0 +1,24 @@
+{
+  "page": "video-resources",
+  "categories": [
+    {
+      "name": "在线影视",
+      "links": [
+        { "name": "VIP视频在线观看", "url": "https://daxueyidiantongvipshipin.netlify.app/" },
+        { "name": "免费影视1", "url": "https://www.zzjt168.com/?utm_source=daxueyidiantong", "title": "来源于第三方。电脑端可用，手机端会被拦截报错" },
+        { "name": "免费影视2", "url": "https://www.yzhmd.com/?utm_source=daxueyidiantong", "title": "来源于第三方。界面有不良弹窗广告，勿信！" },
+        { "name": "免费影视3", "url": "https://www.zhenlang.cc/?utm_source=daxueyidiantong", "title": "来源于第三方。界面有不良弹窗广告，勿信！" },
+        { "name": "免费影视4", "url": "https://sszzyy.com/?utm_source=daxueyidiantong", "title": "来源于第三方。界面有不良弹窗广告，勿信！" },
+        { "name": "免费影视5", "url": "https://www.lkvod.com/?utm_source=daxueyidiantong", "title": "来源于第三方。界面有不良弹窗广告，勿信！" },
+        { "name": "免费影视6", "url": "https://4k51.com/?utm_source=daxueyidiantong", "title": "来源于第三方。界面有不良弹窗广告，勿信！" },
+        { "name": "免费影视7", "url": "https://www.dushe1.app?utm_source=daxueyidiantong", "title": "来源于第三方。界面有不良弹窗广告，勿信！" }
+      ]
+    },
+    {
+      "name": "影视下载",
+      "links": [
+        { "name": "影视下载1", "url": "https://www.seedhub.cc/", "title": "来源于第三方。界面和视频中的不良弹窗广告，勿信！" }
+      ]
+    }
+  ]
+}

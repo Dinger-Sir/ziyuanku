@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="大学一点通浏览器 — 集成百度、搜狗、必应、谷歌四大搜索引擎，一键切换。">
+    <title>浏览器 - 大学一点通工具箱</title>
+    <link rel="icon" href="./ico/大学一点通.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./ico/大学一点通.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="./ico/16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./ico/32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./ico/48x48.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="./ico/128x128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="./ico/256x256.png" sizes="256x256">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <main class="main-content compact-page">
+            <div class="category-container">
+                <div class="main-category">
+                    <div class="search-box">
+                        <div id="engine-selector">
+                            <span class="engine-name">百度</span>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                        <div id="engine-options">
+                            <div class="engine-option" data-engine="baidu">百度</div>
+                            <div class="engine-option" data-engine="sogou">搜狗</div>
+                            <div class="engine-option" data-engine="bing">必应</div>
+                            <div class="engine-option" data-engine="google">谷歌</div>
+                        </div>
+                        <input type="text" id="search-input" placeholder="输入搜索内容">
+                        <button id="search-btn">大学一点通搜索</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/js/components.js"></script>
+    <script src="js/js/script.js"></script>
+    <script>insertSharedComponents('search');</script>
+    <noscript>
+        <div style="text-align:center;padding:20px;color:#666;">请启用JavaScript以获得完整体验</div>
+    </noscript>
+</body>
+</html>

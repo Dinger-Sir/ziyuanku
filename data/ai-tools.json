@@ -1,0 +1,87 @@
+{
+  "page": "ai-tools",
+  "categories": [
+    {
+      "name": "AI聊天对话",
+      "links": [
+        { "name": "豆包", "url": "https://www.doubao.com/chat/", "title": "豆包AI聊天平台" },
+        { "name": "问小白", "url": "https://www.wenxiaobai.com/chat/tourist" },
+        { "name": "Deepseek", "url": "https://www.deepseek.com/" },
+        { "name": "AskManyAI", "url": "https://askmany.cn/login" },
+        { "name": "腾讯元宝", "url": "https://yuanbao.tencent.com/chat/naQivTmsDa" },
+        { "name": "书生·浦语", "url": "https://sso.openxlab.org.cn/login" },
+        { "name": "百小应", "url": "https://ying.baichuan-ai.com/chat" },
+        { "name": "小艺", "url": "https://xiaoyi.huawei.com/chat/" },
+        { "name": "通义", "url": "https://tongyi.aliyun.com/" },
+        { "name": "文心一言", "url": "https://yiyan.baidu.com/" },
+        { "name": "讯飞星火", "url": "https://xinghuo.xfyun.cn/desk" },
+        { "name": "智谱清言", "url": "https://chatglm.cn/main/alltoolsdetail?lang=zh" },
+        { "name": "Kimi智能助手", "url": "https://kimi.moonshot.cn/" },
+        { "name": "Poe（需VPN）", "url": "https://poe.com/login" },
+        { "name": "Claude（需VPN）", "url": "https://claude.ai/login?returnTo=%2F%3F" },
+        { "name": "Grok（需VPN）", "url": "https://grok.com/" },
+        { "name": "ChatGPT（需VPN）", "url": "https://chatgpt.com/" },
+        { "name": "Gemini（需VPN）", "url": "https://gemini.google.com/" }
+      ]
+    },
+    {
+      "name": "AI编程工具",
+      "links": [
+        { "name": "豆包AI编程", "url": "https://www.doubao.com/chat/coding" },
+        { "name": "通义灵码", "url": "https://lingma.aliyun.com/" },
+        { "name": "Trae", "url": "https://www.trae.com.cn/" },
+        { "name": "Interview Coder", "url": "https://www.interviewcoder.co/" },
+        { "name": "飞算Java AI", "url": "https://www.feisuanyz.com/home" },
+        { "name": "Cursor", "url": "https://www.cursor.com/cn" },
+        { "name": "Cursor编程学习", "url": "https://learn-cursor.com/wiki/user-guide/programming-basics-for-beginners" },
+        { "name": "Cursor Directory", "url": "https://cursor.directory/" },
+        { "name": "CursorList", "url": "https://cursorlist.com/" }
+      ]
+    },
+    {
+      "name": "AI搜索引擎",
+      "links": [
+        { "name": "Miku", "url": "https://www.hellomiku.com/index" },
+        { "name": "开搜AI", "url": "https://kaisouai.com/" },
+        { "name": "知乎直答", "url": "https://zhida.zhihu.com/" },
+        { "name": "博查AI搜索", "url": "https://bochaai.com/" },
+        { "name": "AndiSearch", "url": "https://andisearch.com/" },
+        { "name": "纳米AI搜索", "url": "https://www.n.cn/" },
+        { "name": "秘塔AI搜索", "url": "https://metaso.cn/" },
+        { "name": "心流", "url": "https://iflow.cn/" },
+        { "name": "Dexa（需VPN）", "url": "https://dexa.ai/" },
+        { "name": "Perplexity（需VPN）", "url": "https://www.perplexity.ai/" }
+      ]
+    },
+    {
+      "name": "AI背景抠图",
+      "links": [
+        { "name": "腾讯ARC人像抠图", "url": "https://arc.tencent.com/zh/ai-demos/faceRestoration" },
+        { "name": "鲜艺AI抠图", "url": "https://kt.94xy.com/" },
+        { "name": "BgSub", "url": "https://bgsub.com/" },
+        { "name": "Removebg One", "url": "https://removebg.one/zh-CN" },
+        { "name": "Experte", "url": "https://www.experte.com/background-remover" },
+        { "name": "ToolBox", "url": "https://boolpic.fun/background-remover" },
+        { "name": "ImageTools", "url": "https://ai-image.tools/home" }
+      ]
+    },
+    {
+      "name": "AI视频制作",
+      "links": [
+        { "name": "白日梦AI视频", "url": "https://aibrm.com/" },
+        { "name": "讯飞绘镜", "url": "https://typemovie.art/#/dashboard" },
+        { "name": "有言3D数字人", "url": "https://www.youyan3d.com/" },
+        { "name": "创一", "url": "https://www.creatifyone.com/" },
+        { "name": "可灵AI", "url": "https://app.klingai.com/cn/" }
+      ]
+    },
+    {
+      "name": "AI学习资源",
+      "links": [
+        { "name": "DeepSeek：从入门到精通", "url": "https://mp.weixin.qq.com/s/QJP4Py4FR8mQ1Q0_2Ji5Aw" },
+        { "name": "普通人如何抓住DeepSeek红利", "url": "https://www.123684.com/s/MYiAvd-4iTM" },
+        { "name": "30个DeepSeek提示词", "url": "https://mp.weixin.qq.com/s/xZQCQDRW9DTDFzdkrUN8GQ" }
+      ]
+    }
+  ]
+}

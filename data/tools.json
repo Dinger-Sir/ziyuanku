@@ -1,0 +1,15 @@
+{
+  "page": "tools",
+  "categories": [
+    {
+      "name": "自研工具（推荐）",
+      "links": [
+        { "name": "加水印", "url": "https://daxueydtsy.netlify.app" },
+        { "name": "薪资计算器", "url": "https://daxueydtxzjsq.netlify.app" },
+        { "name": "色值查询", "url": "https://sezhichaxun.netlify.app" },
+        { "name": "PDF合并", "url": "https://daxueydtpdfmerge.netlify.app" },
+        { "name": "在线画板", "url": "https://zaixianhuatu.netlify.app" }
+      ]
+    }
+  ]
+}
