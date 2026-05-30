@@ -17,7 +17,30 @@
             <section id="home">
                 <div class="hero-section">
                     <h1 class="hero-title">
-                        <span class="title-brand">大学一点通</span>
+                        <svg class="title-svg" viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <!-- 底色渐变 -->
+                                <linearGradient id="titleBase" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#FFFFFF"/>
+                                    <stop offset="45%" stop-color="#EDE5FF"/>
+                                    <stop offset="100%" stop-color="#C0A8F5"/>
+                                </linearGradient>
+                                <!-- 流光渐变 -->
+                                <linearGradient id="titleShine" x1="0" y1="0" x2="1" y2="0">
+                                    <stop offset="0%" stop-color="rgba(255,255,255,0)"/>
+                                    <stop offset="40%" stop-color="rgba(255,255,255,0)"/>
+                                    <stop offset="50%" stop-color="rgba(255,255,255,0.8)"/>
+                                    <stop offset="60%" stop-color="rgba(255,255,255,0)"/>
+                                    <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+                                    <animate attributeName="x1" values="-1;2" dur="2.5s" repeatCount="indefinite"/>
+                                    <animate attributeName="x2" values="0;3" dur="2.5s" repeatCount="indefinite"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- 底色 -->
+                            <text x="400" y="125" text-anchor="middle" font-size="140" font-weight="900" font-family="PingFang SC,Microsoft YaHei,sans-serif" fill="url(#titleBase)">大学一点通</text>
+                            <!-- 流光层 -->
+                            <text x="400" y="125" text-anchor="middle" font-size="140" font-weight="900" font-family="PingFang SC,Microsoft YaHei,sans-serif" fill="url(#titleShine)">大学一点通</text>
+                        </svg>
                         <span class="title-tag">工具箱</span>
                     </h1>
                     <p><img src="img/欢迎关注大学一点通公众号！.jpg" width="150px" alt="二维码"></p>

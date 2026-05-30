@@ -48,15 +48,22 @@
 html {
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 
 body {
+    overflow-x: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'Segoe UI', sans-serif;
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: 0.02em;
     color: var(--text-primary);
-    background: var(--body-bg);
+    background:
+        /* 科技感点阵 */
+        radial-gradient(circle, rgba(108,126,255,0.12) 1.2px, transparent 1.2px),
+        var(--body-bg);
+    background-size: 28px 28px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -124,7 +131,23 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     transition: left var(--transition);
     overflow-y: auto;
     overflow-x: hidden;
-    border-right: 1px solid #111;
+}
+/* 侧边栏右边缘：若有若无的光影 */
+.sidebar::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom,
+        transparent 0%,
+        rgba(108,126,255,0.08) 20%,
+        rgba(108,126,255,0.15) 50%,
+        rgba(108,126,255,0.08) 80%,
+        transparent 100%
+    );
+    pointer-events: none;
 }
 
 .sidebar.hidden {
@@ -247,7 +270,8 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     min-height: 100vh;
     padding: 40px;
     transition: margin-left var(--transition);
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .main-content.full-width {
@@ -288,21 +312,55 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
    ============================================================ */
 .hero-section {
     text-align: center;
-    padding: 70px 30px;
-    margin-bottom: 40px;
-    background: linear-gradient(135deg, #4A3AFF 0%, #6C7EFF 30%, #8B5CF6 70%, #A855F7 100%);
+    padding: 80px 30px 60px;
+    margin-bottom: 20px;
     color: #fff;
-    border-radius: var(--radius-lg);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    /* 穹顶氛围光：底部亮，向上渐暗 */
+    background: radial-gradient(ellipse 70% 50% at 50% 65%,
+        rgba(140, 90, 230, 0.20) 0%,
+        rgba(100, 60, 200, 0.10) 35%,
+        rgba(60, 30,  140, 0.03) 65%,
+        transparent 85%
+    );
 }
 
-.hero-section::before {
+/* 去掉伪元素 */
+.hero-section::before,
+.hero-section::after {
+    display: none;
+}
+
+/* 标题下方弧线光 */
+.hero-title {
+    position: relative;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-title::after {
     content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.12) 0%, transparent 60%);
-    pointer-events: none;
+    display: block;
+    width: min(400px, 60vw);
+    height: 2px;
+    margin-top: clamp(6px, 1vw, 12px);
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(180, 140, 250, 0.1) 15%,
+        rgba(210, 180, 255, 0.5) 40%,
+        rgba(220, 195, 255, 0.7) 50%,
+        rgba(210, 180, 255, 0.5) 60%,
+        rgba(180, 140, 250, 0.1) 85%,
+        transparent 100%
+    );
+    box-shadow:
+        0 0 12px  rgba(200, 165, 255, 0.35),
+        0 0 30px  rgba(170, 135, 240, 0.20),
+        0 -2px 18px rgba(180, 150, 250, 0.25);
+    border-radius: 1px;
 }
 
 /* ---- 首页标题 ---- */
@@ -315,54 +373,35 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     justify-content: center;
 }
 
-/* 大学一点通 — 主标题 */
-.title-brand {
-    font-size: 3.5em;
-    font-weight: 900;
-    letter-spacing: 0.08em;
-    line-height: 1;
-    /* 多层渐变：亮白 → 淡蓝 → 淡紫 */
-    background: linear-gradient(
-        180deg,
-        #FFFFFF 0%,
-        #E8ECFF 30%,
-        #C5D0FF 60%,
-        #A8B8FF 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    /* 双层光晕 */
-    filter: drop-shadow(0 0 28px rgba(108,126,255,0.45))
-            drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+/* 大学一点通 — 主标题（流体字号 + 逐字动效） */
+/* SVG 标题 */
+.title-svg {
+    display: block;
+    width: min(100%, 720px);
+    height: auto;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 18px rgba(140,100,240,0.40));
+    animation: svgFloat 3.5s ease-in-out infinite;
+}
+
+@keyframes svgFloat {
+    0%, 100% { transform: translateY(0); filter: drop-shadow(0 0 18px rgba(140,100,240,0.40)); }
+    50% { transform: translateY(-8px); filter: drop-shadow(0 8px 28px rgba(150,120,250,0.55)); }
 }
 
 /* 工具箱 — 标签 */
 .title-tag {
     display: inline-block;
-    margin-top: 12px;
-    padding: 4px 22px;
-    font-size: 0.95em;
+    margin-top: clamp(8px, 1.5vw, 14px);
+    padding: clamp(3px, 0.6vw, 5px) clamp(16px, 3vw, 24px);
+    font-size: clamp(0.7em, 2vw, 1em);
     font-weight: 500;
-    letter-spacing: 0.22em;
+    letter-spacing: 0.2em;
     color: rgba(255,255,255,0.7);
     border: 1px solid rgba(255,255,255,0.15);
     border-radius: 20px;
-    backdrop-filter: blur(6px);
     background: rgba(255,255,255,0.04);
     line-height: 1.7;
-}
-
-@media (max-width: 768px) {
-    .title-brand {
-        font-size: 2.2em;
-        letter-spacing: 0.05em;
-    }
-    .title-tag {
-        font-size: 0.8em;
-        padding: 3px 16px;
-        letter-spacing: 0.15em;
-    }
 }
 
 .hero-section p {
@@ -385,6 +424,7 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 28px;
+    text-align: left;
 }
 
 .guide-card {
@@ -393,13 +433,15 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border);
+    border-top: 2px solid rgba(108,126,255,0.2);
     max-width: 100%;
-    transition: border-color var(--transition), box-shadow var(--transition);
+    transition: border-color var(--transition), box-shadow var(--transition), border-top-color var(--transition);
 }
 
 .guide-card:hover {
     box-shadow: var(--shadow-md);
     border-color: #333;
+    border-top-color: var(--primary);
 }
 
 .guide-card h3 {
@@ -443,7 +485,7 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     color: var(--text-primary);
     margin-bottom: 30px;
     padding-bottom: 14px;
-    border-bottom: 2px solid #222;
+    border-bottom: 1px solid rgba(108,126,255,0.15);
     font-size: 1.7rem;
     font-weight: 700;
     letter-spacing: 0.04em;
@@ -479,6 +521,7 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     background: var(--card-bg);
     border-radius: var(--radius-md);
     border: 1px solid var(--border);
+    border-left: 2px solid rgba(108,126,255,0.15);
     box-shadow: var(--shadow-sm);
     transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background var(--transition);
     display: flex;
@@ -489,8 +532,9 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
 
 .horizontal-link:hover {
     transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-md), 0 0 20px rgba(108,126,255,0.08);
     border-color: var(--primary);
+    border-left-color: var(--primary);
     background: var(--card-bg-hover);
 }
 
@@ -521,6 +565,8 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     flex: 1;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 /* ============================================================
@@ -618,7 +664,7 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     user-select: text !important;
     padding: 10px 14px;
     border: 1px solid var(--border);
-    border-left: none;
+    border-left: 3px solid var(--primary);
     flex: 1;
     min-width: 0;
     font-size: 0.95rem;
@@ -626,6 +672,10 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     background: var(--card-bg);
     color: var(--text-primary);
     transition: border-color var(--transition);
+}
+#search-input:focus {
+    border-color: var(--primary);
+    border-left-width: 3px;
 }
 
 #search-input::placeholder {
