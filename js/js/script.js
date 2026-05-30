@@ -189,35 +189,38 @@ function updateVisitCounter() {
     var siteKey = NS + '/site-total';
     var pageKey = NS + '/page' + (pagePath || '_home');
 
-    // 1. 本地立即显示（零延迟）
-    var localTotal = parseInt(localStorage.getItem('site_total_visits')) || 0;
-    var localPage = parseInt(localStorage.getItem('page_visits_' + pagePath)) || 0;
-    localTotal += 1;
-    localPage += 1;
-    localStorage.setItem('site_total_visits', localTotal);
-    localStorage.setItem('page_visits_' + pagePath, localPage);
+    // 1. 瞬间显示上次服务端缓存值
+    var cachedSite = parseInt(localStorage.getItem('site_total_visits')) || 0;
+    var cachedPage = parseInt(localStorage.getItem('page_visits_' + pagePath)) || 0;
+    counterEl.innerHTML = '全站访问 <strong>' + cachedSite + '</strong> 次 | 本页 <strong>' + cachedPage + '</strong> 次';
 
-    counterEl.innerHTML = '全站访问 <strong>' + localTotal + '</strong> 次 | 本页 <strong>' + localPage + '</strong> 次';
+    // 2. 后台静默同步服务端真实值
+    var timeout = { signal: AbortSignal.timeout(6000) };
 
-    // 2. 后台异步同步到服务端（不阻塞显示）
-    var timeout = { signal: AbortSignal.timeout(4000) };
+    function fetchAndUpdate(key, cacheKey, label, strongEnd) {
+        fetch('https://api.countapi.xyz/hit/' + key, timeout)
+            .then(function(r) { return r.json(); })
+            .then(function(d) {
+                localStorage.setItem(cacheKey, d.value);
+                var parts = counterEl.innerHTML.split('|');
+                var newHTML = label + ' <strong>' + d.value + '</strong> 次';
+                if (parts.length === 2) {
+                    // Replace the right part
+                    var leftPart = parts[0];
+                    if (strongEnd) {
+                        counterEl.innerHTML = newHTML + ' | ' + parts[1];
+                    } else {
+                        counterEl.innerHTML = parts[0] + ' | ' + newHTML;
+                    }
+                } else {
+                    counterEl.innerHTML = newHTML;
+                }
+            })
+            .catch(function() {});
+    }
 
-    fetch('https://api.countapi.xyz/hit/' + siteKey, timeout)
-        .then(function(r) { return r.json(); })
-        .then(function(d) {
-            localStorage.setItem('site_total_visits', d.value);
-            counterEl.innerHTML = '全站访问 <strong>' + d.value + '</strong> 次';
-        })
-        .catch(function() {});
-
-    fetch('https://api.countapi.xyz/hit/' + pageKey, timeout)
-        .then(function(r) { return r.json(); })
-        .then(function(d) {
-            localStorage.setItem('page_visits_' + pagePath, d.value);
-            var newHTML = counterEl.innerHTML.replace(/本页 <strong>\d+<\/strong>/, '本页 <strong>' + d.value + '</strong>');
-            counterEl.innerHTML = newHTML;
-        })
-        .catch(function() {});
+    fetchAndUpdate(siteKey, 'site_total_visits', '全站访问', true);
+    fetchAndUpdate(pageKey, 'page_visits_' + pagePath, '本页', false);
 }
 
 // ======== Hash 变化监听 ========
