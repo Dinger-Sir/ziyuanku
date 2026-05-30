@@ -65,14 +65,26 @@ function buildSharedComponentsHTML() {
     // 回到顶部
     html += '<div id="get-top" title="回到顶部"><i class="fas fa-arrow-up"></i></div>';
 
-    // 页脚（含访问统计）
+    // 页脚（含不蒜子访问统计）
     html += '<footer class="site-footer"><div class="copyright-text">';
     html += '由「大学一点通」团队提供技术支持';
-    html += '&nbsp;&nbsp;|&nbsp;&nbsp;<span id="visit-counter">加载中...</span>';
+    html += '&nbsp;|&nbsp;';
+    html += '全站访问 <strong id="busuanzi_value_site_pv">—</strong> 次';
+    html += '&nbsp;|&nbsp;';
+    html += '本页访问 <strong id="busuanzi_value_page_pv">—</strong> 次';
     html += '</div></footer>';
 
     return html;
 }
+
+// ======== 不蒜子计数器 ========
+(function initBusuanzi() {
+    var bs = document.createElement('script');
+    bs.async = true;
+    bs.src = '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
+    var s = document.getElementsByTagName('script')[0];
+    if (s) s.parentNode.insertBefore(bs, s);
+})();
 
 // ======== 百度统计（全站） ========
 (function initBaiduAnalytics() {

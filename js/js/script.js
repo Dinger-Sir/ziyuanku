@@ -176,42 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const showModal = setupCustomModal();
     setupOpinionNav(showModal);
     setupBackToTop();
-    updateVisitCounter();
 });
-
-// ======== 访问计数器（纯服务端，所有设备同一数据源） ========
-function updateVisitCounter() {
-    var counterEl = document.getElementById('visit-counter');
-    if (!counterEl) return;
-
-    var pagePath = window.location.pathname.replace(/[^a-zA-Z0-9一-鿿]/g, '_');
-    // 使用唯一命名空间避免冲突
-    var NS = 'daxueydt2024';
-    var siteKey = NS + '/site-total';
-    var pageKey = NS + '/page' + (pagePath || '_home');
-
-    counterEl.innerHTML = '统计加载中...';
-
-    var timeout = { signal: AbortSignal.timeout(5000) };
-
-    // 先读当前值（get不累加），显示一致的数字
-    Promise.all([
-        fetch('https://api.countapi.xyz/get/' + siteKey, timeout).then(function(r) { return r.json(); }),
-        fetch('https://api.countapi.xyz/get/' + pageKey, timeout).then(function(r) { return r.json(); })
-    ])
-    .then(function(results) {
-        var siteVal = (results[0] && results[0].value != null) ? results[0].value : 0;
-        var pageVal = (results[1] && results[1].value != null) ? results[1].value : 0;
-        counterEl.innerHTML = '全站访问 <strong>' + siteVal + '</strong> 次 | 本页 <strong>' + pageVal + '</strong> 次';
-
-        // 后台累加（hit会+1，供下次访问看到新值）
-        fetch('https://api.countapi.xyz/hit/' + siteKey, timeout).catch(function(){});
-        fetch('https://api.countapi.xyz/hit/' + pageKey, timeout).catch(function(){});
-    })
-    .catch(function() {
-        counterEl.innerHTML = '—';
-    });
-}
 
 // ======== Hash 变化监听 ========
 window.addEventListener('hashchange', () => {

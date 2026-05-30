@@ -581,12 +581,8 @@ body, .section-title, .nav-link, .guide-card h3, .horizontal-link a {
     flex-shrink: 0;
 }
 
-#visit-counter {
-    color: var(--text-secondary);
-    font-weight: 400;
-    font-size: 0.88em;
-}
-#visit-counter strong {
+#busuanzi_value_site_pv,
+#busuanzi_value_page_pv {
     color: var(--primary);
     font-weight: 700;
 }
