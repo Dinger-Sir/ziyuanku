@@ -179,48 +179,38 @@ document.addEventListener('DOMContentLoaded', () => {
     updateVisitCounter();
 });
 
-// ======== 访问计数器（即时显示 + 服务端后台同步） ========
+// ======== 访问计数器（纯服务端，所有设备同一数据源） ========
 function updateVisitCounter() {
     var counterEl = document.getElementById('visit-counter');
     if (!counterEl) return;
 
     var pagePath = window.location.pathname.replace(/[^a-zA-Z0-9一-鿿]/g, '_');
-    var NS = 'daxueydt';
+    // 使用唯一命名空间避免冲突
+    var NS = 'daxueydt2024';
     var siteKey = NS + '/site-total';
     var pageKey = NS + '/page' + (pagePath || '_home');
 
-    // 1. 瞬间显示上次服务端缓存值
-    var cachedSite = parseInt(localStorage.getItem('site_total_visits')) || 0;
-    var cachedPage = parseInt(localStorage.getItem('page_visits_' + pagePath)) || 0;
-    counterEl.innerHTML = '全站访问 <strong>' + cachedSite + '</strong> 次 | 本页 <strong>' + cachedPage + '</strong> 次';
+    counterEl.innerHTML = '统计加载中...';
 
-    // 2. 后台静默同步服务端真实值
-    var timeout = { signal: AbortSignal.timeout(6000) };
+    var timeout = { signal: AbortSignal.timeout(5000) };
 
-    function fetchAndUpdate(key, cacheKey, label, strongEnd) {
-        fetch('https://api.countapi.xyz/hit/' + key, timeout)
-            .then(function(r) { return r.json(); })
-            .then(function(d) {
-                localStorage.setItem(cacheKey, d.value);
-                var parts = counterEl.innerHTML.split('|');
-                var newHTML = label + ' <strong>' + d.value + '</strong> 次';
-                if (parts.length === 2) {
-                    // Replace the right part
-                    var leftPart = parts[0];
-                    if (strongEnd) {
-                        counterEl.innerHTML = newHTML + ' | ' + parts[1];
-                    } else {
-                        counterEl.innerHTML = parts[0] + ' | ' + newHTML;
-                    }
-                } else {
-                    counterEl.innerHTML = newHTML;
-                }
-            })
-            .catch(function() {});
-    }
+    // 先读当前值（get不累加），显示一致的数字
+    Promise.all([
+        fetch('https://api.countapi.xyz/get/' + siteKey, timeout).then(function(r) { return r.json(); }),
+        fetch('https://api.countapi.xyz/get/' + pageKey, timeout).then(function(r) { return r.json(); })
+    ])
+    .then(function(results) {
+        var siteVal = (results[0] && results[0].value != null) ? results[0].value : 0;
+        var pageVal = (results[1] && results[1].value != null) ? results[1].value : 0;
+        counterEl.innerHTML = '全站访问 <strong>' + siteVal + '</strong> 次 | 本页 <strong>' + pageVal + '</strong> 次';
 
-    fetchAndUpdate(siteKey, 'site_total_visits', '全站访问', true);
-    fetchAndUpdate(pageKey, 'page_visits_' + pagePath, '本页', false);
+        // 后台累加（hit会+1，供下次访问看到新值）
+        fetch('https://api.countapi.xyz/hit/' + siteKey, timeout).catch(function(){});
+        fetch('https://api.countapi.xyz/hit/' + pageKey, timeout).catch(function(){});
+    })
+    .catch(function() {
+        counterEl.innerHTML = '—';
+    });
 }
 
 // ======== Hash 变化监听 ========
