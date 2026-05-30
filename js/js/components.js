@@ -81,7 +81,7 @@ function buildSharedComponentsHTML() {
 (function initBusuanzi() {
     var bs = document.createElement('script');
     bs.async = true;
-    bs.src = '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
+    bs.src = 'https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
     var s = document.getElementsByTagName('script')[0];
     if (s) s.parentNode.insertBefore(bs, s);
 })();
