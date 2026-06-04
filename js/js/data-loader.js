@@ -59,6 +59,9 @@ var FALLBACK_DATA = {
                 {"name":"色值查询","url":"https://sezhichaxun.netlify.app"},
                 {"name":"PDF合并","url":"https://daxueydtpdfmerge.netlify.app"},
                 {"name":"在线画板","url":"https://zaixianhuatu.netlify.app"}
+            ]},
+            {"name":"优秀工具/网站","links":[
+                {"name":"新概念英语","url":"https://www.newconceptenglish.com/"}
             ]}
         ]
     },
